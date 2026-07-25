@@ -19,3 +19,7 @@
 - Naming principles
 - Rules-text before/after samples
 - Accessibility and icon-language alignment
+
+## Published case study
+
+- [Iconia: Critters & Spells — Keyword Localization Case Study](iconia-keyword-localization-case-study.md)
