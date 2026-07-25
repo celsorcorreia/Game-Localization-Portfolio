@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Game Localization Portfolio
 
 Professional portfolio focused on **game localization, terminology management, narrative consistency, and technical documentation** for English and Brazilian Portuguese.
@@ -54,3 +55,6 @@ This repository is a living portfolio. Samples and glossary entries should ident
 ## Copyright
 
 Unless a file states otherwise, written content, fictional settings, terminology, and localization samples remain the intellectual property of their respective authors and rights holders. Public visibility is for portfolio evaluation and does not grant permission for commercial reuse.
+=======
+# Game-Localization-Portfolio
+>>>>>>> 6bf20af4df249cebcebf28f0b0ed6cf5986bf63d
