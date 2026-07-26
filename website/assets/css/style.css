@@ -227,7 +227,7 @@ h3 {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -633,4 +633,90 @@ footer {
   footer {
     flex-direction: column;
   }
+}
+
+
+/* Linguistic QA case study */
+
+.issue-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1rem;
+}
+
+.issue-id {
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.severity-badge,
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: .28rem .55rem;
+  border: 1px solid currentColor;
+  font-size: .68rem;
+  font-weight: 850;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.severity-critical {
+  color: #ffb4b4;
+  background: rgba(255, 100, 100, .1);
+}
+
+.severity-major {
+  color: #ffd38a;
+  background: rgba(255, 180, 70, .1);
+}
+
+.severity-minor {
+  color: #c4b5fd;
+  background: rgba(167, 139, 250, .1);
+}
+
+.status-fixed {
+  color: #b9f6ca;
+  background: rgba(95, 210, 135, .1);
+}
+
+.status-retest {
+  color: #ffd38a;
+  background: rgba(255, 180, 70, .1);
+}
+
+.issue-card h3 {
+  margin-top: 0;
+}
+
+.issue-table {
+  min-width: 1480px;
+}
+
+.lqa-status-grid {
+  margin-top: 1rem;
+}
+
+.lqa-metric {
+  margin: .25rem 0;
+  color: var(--accent) !important;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.case-main code {
+  padding: .15rem .35rem;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--accent);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .9em;
 }
