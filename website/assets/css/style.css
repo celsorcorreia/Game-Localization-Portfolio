@@ -227,7 +227,7 @@ h3 {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
 }
 
@@ -719,4 +719,49 @@ footer {
   color: var(--accent);
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: .9em;
+}
+
+
+/* UI & Tutorial Localization case study */
+
+.string-table {
+  min-width: 1320px;
+}
+
+.variable-table {
+  min-width: 980px;
+}
+
+.limit-meter {
+  width: 150px;
+  height: .45rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.limit-meter span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+.string-table small {
+  display: block;
+  margin-top: .35rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.ui-metric {
+  margin: .25rem 0 !important;
+  color: var(--accent) !important;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.variable-table code,
+.string-table code {
+  white-space: nowrap;
 }

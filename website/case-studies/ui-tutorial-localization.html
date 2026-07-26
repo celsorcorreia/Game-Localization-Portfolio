@@ -1,0 +1,1106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UI and tutorial localization case study from English into Brazilian Portuguese by Celso Ricardo Correia.">
+  <title>UI &amp; Tutorial Localization | Case Study</title>
+
+  <link rel="canonical" href="https://celsorcorreia.github.io/Game-Localization-Portfolio/case-studies/ui-tutorial-localization.html">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="UI &amp; Tutorial Localization | Celso Ricardo Correia">
+  <meta property="og:description" content="English-to-Brazilian Portuguese UI, menu, tutorial, error-message, variable, and character-limit localization.">
+  <meta property="og:url" content="https://celsorcorreia.github.io/Game-Localization-Portfolio/case-studies/ui-tutorial-localization.html">
+  <meta property="og:image" content="https://celsorcorreia.github.io/Game-Localization-Portfolio/assets/images/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Celso Ricardo Correia — Home">CRC<span>.</span></a>
+
+    <nav aria-label="Primary navigation">
+      <a href="../about.html">About</a>
+      <a href="../index.html#expertise">Expertise</a>
+      <a href="../index.html#projects">Work</a>
+      <a href="../index.html#process">Process</a>
+      <a href="../resume.html">Resume</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="case-main">
+    <a class="case-back" href="../index.html#projects">← Back to selected work</a>
+
+    <section class="case-hero">
+      <p class="eyebrow">UI &amp; tutorial localization case study</p>
+      <h1>Player-facing text<br>built for context.</h1>
+      <p class="case-lead">An English-to-Brazilian Portuguese localization study covering menus, buttons, tutorials, system messages, quest objectives, variables, input prompts, capitalization, and character limits.</p>
+
+      <div class="meta-grid">
+        <article class="meta-card">
+          <span class="meta-label">Language pair</span>
+          <span class="meta-value">English → PT-BR</span>
+        </article>
+        <article class="meta-card">
+          <span class="meta-label">Sample project</span>
+          <span class="meta-value">Lanternbound</span>
+        </article>
+        <article class="meta-card">
+          <span class="meta-label">Platforms</span>
+          <span class="meta-value">PC · Console</span>
+        </article>
+        <article class="meta-card">
+          <span class="meta-label">Content status</span>
+          <span class="meta-value">Original fictional sample</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-heading">
+        <p class="eyebrow">Project overview</p>
+        <div>
+          <h2>Short strings with large gameplay impact.</h2>
+          <p>UI text must communicate an action or state immediately while respecting space, platform, variables, style, and context.</p>
+        </div>
+      </div>
+
+      <article class="case-card">
+        <p><strong>Lanternbound</strong> is a fictional fantasy adventure game created solely for this portfolio sample. The localization database contains 36 original English strings and their final Brazilian Portuguese versions.</p>
+        <p>The sample covers main menus, buttons, HUD notifications, tutorials, system errors, warnings, quest objectives, dynamic notifications, settings, and interaction prompts.</p>
+      </article>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-heading">
+        <p class="eyebrow">My role</p>
+        <div>
+          <h2>Localization, terminology, adaptation, and QA.</h2>
+          <p>The work includes context analysis, character-count tracking, variable protection, style-guide development, terminology control, and functional linguistic review.</p>
+        </div>
+      </div>
+
+      <ul class="tag-list">
+        <li>UI localization</li>
+        <li>Tutorial writing</li>
+        <li>Terminology</li>
+        <li>Character limits</li>
+        <li>Variable protection</li>
+        <li>Context review</li>
+        <li>Accessibility strings</li>
+        <li>Linguistic QA</li>
+      </ul>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-heading">
+        <p class="eyebrow">Scope</p>
+        <div>
+          <h2>36 strings across player-facing systems.</h2>
+          <p>Every final string remains within its assigned character limit.</p>
+        </div>
+      </div>
+
+      <div class="meta-grid">
+        <article class="meta-card">
+          <span class="meta-label">Strings</span>
+          <span class="meta-value">36</span>
+        </article>
+        <article class="meta-card">
+          <span class="meta-label">Content areas</span>
+          <span class="meta-value">9</span>
+        </article>
+        <article class="meta-card">
+          <span class="meta-label">Protected strings</span>
+          <span class="meta-value">10</span>
+        </article>
+        <article class="meta-card">
+          <span class="meta-label">Limit failures</span>
+          <span class="meta-value">0</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-heading">
+        <p class="eyebrow">Content architecture</p>
+        <div>
+          <h2>Different contexts require different language.</h2>
+        </div>
+      </div>
+
+      <div class="objectives-grid">
+        
+    <article class="case-card objective-card">
+      <span class="objective-number">01</span>
+      <h3>Menus &amp; buttons</h3>
+      <p>Infinitive labels, sentence case, and compact navigation wording.</p>
+    </article>
+    
+    <article class="case-card objective-card">
+      <span class="objective-number">02</span>
+      <h3>HUD notifications</h3>
+      <p>Short status messages that remain readable during play.</p>
+    </article>
+    
+    <article class="case-card objective-card">
+      <span class="objective-number">03</span>
+      <h3>Tutorials</h3>
+      <p>Direct imperatives, protected input prompts, and player-first instruction order.</p>
+    </article>
+    
+    <article class="case-card objective-card">
+      <span class="objective-number">04</span>
+      <h3>System messages</h3>
+      <p>Clear errors, warnings, recovery actions, and confirmation language.</p>
+    </article>
+    
+    <article class="case-card objective-card">
+      <span class="objective-number">05</span>
+      <h3>Quest objectives</h3>
+      <p>Imperative action verbs and consistent world terminology.</p>
+    </article>
+    
+    <article class="case-card objective-card">
+      <span class="objective-number">06</span>
+      <h3>Dynamic strings</h3>
+      <p>Runtime names, quantities, rewards, and protected variables.</p>
+    </article>
+    
+    <article class="case-card objective-card">
+      <span class="objective-number">07</span>
+      <h3>Settings</h3>
+      <p>Concise labels for language and accessibility options.</p>
+    </article>
+    
+    <article class="case-card objective-card">
+      <span class="objective-number">08</span>
+      <h3>Contextual prompts</h3>
+      <p>Interaction text adapted to the action available in the game world.</p>
+    </article>
+    
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-heading">
+        <p class="eyebrow">Key decisions</p>
+        <div>
+          <h2>Context before literal equivalence.</h2>
+          <p>The same English grammar can require different Portuguese forms depending on whether the text is a button, objective, warning, or tutorial.</p>
+        </div>
+      </div>
+
+      <div class="decision-grid">
+        
+    <article class="decision-card">
+      <h3>New Game → Novo jogo</h3>
+      <div class="language-block">
+        <span class="language-label">Source</span>
+        New Game
+      </div>
+      <div class="language-block">
+        <span class="language-label">Selected PT-BR</span>
+        Novo jogo
+      </div>
+      <p><strong>Alternatives considered:</strong> Novo Jogo; Iniciar novo jogo</p>
+      <p>Sentence case follows Brazilian Portuguese UI conventions. The shorter form fits the menu and remains immediately recognisable.</p>
+    </article>
+    
+    <article class="decision-card">
+      <h3>Continue → Continuar</h3>
+      <div class="language-block">
+        <span class="language-label">Source</span>
+        Continue
+      </div>
+      <div class="language-block">
+        <span class="language-label">Selected PT-BR</span>
+        Continuar
+      </div>
+      <p><strong>Alternatives considered:</strong> Continuar jogo; Retomar</p>
+      <p>Buttons use the infinitive. Continuar is concise and does not imply that the game is currently paused.</p>
+    </article>
+    
+    <article class="decision-card">
+      <h3>Inventory Full → Inventário cheio</h3>
+      <div class="language-block">
+        <span class="language-label">Source</span>
+        Inventory Full
+      </div>
+      <div class="language-block">
+        <span class="language-label">Selected PT-BR</span>
+        Inventário cheio
+      </div>
+      <p><strong>Alternatives considered:</strong> Não há espaço suficiente no inventário</p>
+      <p>The selected version communicates the state in 16 characters and works as a short gameplay toast.</p>
+    </article>
+    
+    <article class="decision-card">
+      <h3>Hold [E] to Interact</h3>
+      <div class="language-block">
+        <span class="language-label">Source</span>
+        Hold [E] to Interact
+      </div>
+      <div class="language-block">
+        <span class="language-label">Selected PT-BR</span>
+        Segure [E] para interagir
+      </div>
+      <p><strong>Alternatives considered:</strong> Mantenha [E] pressionado para interagir</p>
+      <p>The shorter imperative respects the 32-character limit and keeps the protected input prompt unchanged.</p>
+    </article>
+    
+    <article class="decision-card">
+      <h3>Connection Lost → Conexão perdida</h3>
+      <div class="language-block">
+        <span class="language-label">Source</span>
+        Connection Lost
+      </div>
+      <div class="language-block">
+        <span class="language-label">Selected PT-BR</span>
+        Conexão perdida
+      </div>
+      <p><strong>Alternatives considered:</strong> A conexão foi perdida; Desconectado</p>
+      <p>The noun phrase works as an error heading. A separate body string explains the recovery action.</p>
+    </article>
+    
+    <article class="decision-card">
+      <h3>Unsaved Progress Will Be Lost</h3>
+      <div class="language-block">
+        <span class="language-label">Source</span>
+        Unsaved Progress Will Be Lost
+      </div>
+      <div class="language-block">
+        <span class="language-label">Selected PT-BR</span>
+        O progresso não salvo será perdido
+      </div>
+      <p><strong>Alternatives considered:</strong> Você perderá o progresso não salvo</p>
+      <p>The impersonal warning is neutral, clear, and preserves the consequence without blaming the player.</p>
+    </article>
+    
+    <article class="decision-card">
+      <h3>Return to the Village</h3>
+      <div class="language-block">
+        <span class="language-label">Source</span>
+        Return to the Village
+      </div>
+      <div class="language-block">
+        <span class="language-label">Selected PT-BR</span>
+        Volte para a vila
+      </div>
+      <p><strong>Alternatives considered:</strong> Voltar à vila; Retorne para a vila</p>
+      <p>Because this is a quest objective, the imperative is preferred. A button with the same English structure would use the infinitive.</p>
+    </article>
+    
+    <article class="decision-card">
+      <h3>Quest Updated → Missão atualizada</h3>
+      <div class="language-block">
+        <span class="language-label">Source</span>
+        Quest Updated
+      </div>
+      <div class="language-block">
+        <span class="language-label">Selected PT-BR</span>
+        Missão atualizada
+      </div>
+      <p><strong>Alternatives considered:</strong> Missão foi atualizada; Atualização de missão</p>
+      <p>The concise result message fits the HUD and follows the approved terminology for Quest.</p>
+    </article>
+    
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-heading">
+        <p class="eyebrow">Variables &amp; prompts</p>
+        <div>
+          <h2>Protected content remains functional.</h2>
+          <p>Runtime variables and input prompts must remain unchanged while moving naturally inside the Portuguese sentence.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="case-table variable-table">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Source</th>
+              <th>Localized</th>
+              <th>Protected content</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+    <tr>
+      <td>Keyboard prompt</td>
+      <td><code>Hold [E] to Interact</code></td>
+      <td><code>Segure [E] para interagir</code></td>
+      <td><code>[E]</code></td>
+    </tr>
+    
+    <tr>
+      <td>Input variable</td>
+      <td><code>Press {button} to Dodge</code></td>
+      <td><code>Pressione {button} para esquivar</code></td>
+      <td><code>{button}</code></td>
+    </tr>
+    
+    <tr>
+      <td>Quantity</td>
+      <td><code>Find {count} Moon Shards</code></td>
+      <td><code>Encontre {count} Fragmentos Lunares</code></td>
+      <td><code>{count}</code></td>
+    </tr>
+    
+    <tr>
+      <td>Reward amount</td>
+      <td><code>You received {amount} coins.</code></td>
+      <td><code>Você recebeu {amount} moedas.</code></td>
+      <td><code>{amount}</code></td>
+    </tr>
+    
+    <tr>
+      <td>Item name</td>
+      <td><code>{item_name} acquired.</code></td>
+      <td><code>Você obteve: {item_name}.</code></td>
+      <td><code>{item_name}</code></td>
+    </tr>
+    
+    <tr>
+      <td>Player name</td>
+      <td><code>Welcome back, {player_name}.</code></td>
+      <td><code>Boas-vindas, {player_name}.</code></td>
+      <td><code>{player_name}</code></td>
+    </tr>
+    
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-heading">
+        <p class="eyebrow">Character limits</p>
+        <div>
+          <h2>Meaning preserved inside fixed space.</h2>
+          <p>The database records the final length, assigned limit, and remaining space for every localized string.</p>
+        </div>
+      </div>
+
+      <div class="pattern-grid">
+        <article class="case-card">
+          <h3>Concise warning</h3>
+          <div class="language-block">
+            <span class="language-label">Rejected · 42 characters</span>
+            Não há mais espaço disponível no inventário
+          </div>
+          <div class="language-block">
+            <span class="language-label">Approved · 16 characters</span>
+            Inventário cheio
+          </div>
+        </article>
+
+        <article class="case-card">
+          <h3>Protected prompt</h3>
+          <div class="language-block">
+            <span class="language-label">Limit · 32</span>
+            Segure [E] para interagir
+          </div>
+          <p>The input prompt remains intact and the final string uses 25 characters.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>Database result</h3>
+          <p class="ui-metric">0</p>
+          <p>Final strings exceeding their assigned limits.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-heading">
+        <p class="eyebrow">Complete string table</p>
+        <div>
+          <h2>Source, target, limits, and protected content.</h2>
+          <p>The downloadable CSV files contain additional context and localization notes.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="case-table string-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Source EN</th>
+              <th>PT-BR</th>
+              <th>Limit</th>
+              <th>Length</th>
+              <th>Variables</th>
+              <th>Space usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+      <tr>
+        <td>MENU_NEW_GAME</td>
+        <td>New Game</td>
+        <td>Novo jogo</td>
+        <td>14</td>
+        <td>9</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="64% of character limit used">
+            <span style="width: 64%"></span>
+          </div>
+          <small>64% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>MENU_CONTINUE</td>
+        <td>Continue</td>
+        <td>Continuar</td>
+        <td>14</td>
+        <td>9</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="64% of character limit used">
+            <span style="width: 64%"></span>
+          </div>
+          <small>64% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>MENU_SETTINGS</td>
+        <td>Settings</td>
+        <td>Configurações</td>
+        <td>16</td>
+        <td>13</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="81% of character limit used">
+            <span style="width: 81%"></span>
+          </div>
+          <small>81% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>MENU_QUIT</td>
+        <td>Quit Game</td>
+        <td>Sair do jogo</td>
+        <td>16</td>
+        <td>12</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="75% of character limit used">
+            <span style="width: 75%"></span>
+          </div>
+          <small>75% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>BUTTON_ACCEPT</td>
+        <td>Accept</td>
+        <td>Aceitar</td>
+        <td>12</td>
+        <td>7</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="58% of character limit used">
+            <span style="width: 58%"></span>
+          </div>
+          <small>58% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>BUTTON_CANCEL</td>
+        <td>Cancel</td>
+        <td>Cancelar</td>
+        <td>12</td>
+        <td>8</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="67% of character limit used">
+            <span style="width: 67%"></span>
+          </div>
+          <small>67% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>BUTTON_RETRY</td>
+        <td>Retry</td>
+        <td>Tentar novamente</td>
+        <td>18</td>
+        <td>16</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="89% of character limit used">
+            <span style="width: 89%"></span>
+          </div>
+          <small>89% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>BUTTON_BACK</td>
+        <td>Back</td>
+        <td>Voltar</td>
+        <td>10</td>
+        <td>6</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="60% of character limit used">
+            <span style="width: 60%"></span>
+          </div>
+          <small>60% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>HUD_INVENTORY_FULL</td>
+        <td>Inventory Full</td>
+        <td>Inventário cheio</td>
+        <td>22</td>
+        <td>16</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="73% of character limit used">
+            <span style="width: 73%"></span>
+          </div>
+          <small>73% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>HUD_QUEST_UPDATED</td>
+        <td>Quest Updated</td>
+        <td>Missão atualizada</td>
+        <td>24</td>
+        <td>17</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="71% of character limit used">
+            <span style="width: 71%"></span>
+          </div>
+          <small>71% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>HUD_OBJECTIVE_COMPLETE</td>
+        <td>Objective Complete</td>
+        <td>Objetivo concluído</td>
+        <td>24</td>
+        <td>18</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="75% of character limit used">
+            <span style="width: 75%"></span>
+          </div>
+          <small>75% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>HUD_LEVEL_UP</td>
+        <td>Level Up</td>
+        <td>Novo nível</td>
+        <td>16</td>
+        <td>10</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="62% of character limit used">
+            <span style="width: 62%"></span>
+          </div>
+          <small>62% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>TUT_INTERACT</td>
+        <td>Hold [E] to Interact</td>
+        <td>Segure [E] para interagir</td>
+        <td>32</td>
+        <td>25</td>
+        <td>[E]</td>
+        <td>
+          <div class="limit-meter" aria-label="78% of character limit used">
+            <span style="width: 78%"></span>
+          </div>
+          <small>78% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>TUT_DODGE</td>
+        <td>Press {button} to Dodge</td>
+        <td>Pressione {button} para esquivar</td>
+        <td>40</td>
+        <td>32</td>
+        <td>{button}</td>
+        <td>
+          <div class="limit-meter" aria-label="80% of character limit used">
+            <span style="width: 80%"></span>
+          </div>
+          <small>80% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>TUT_MAP</td>
+        <td>Open the Map to View Your Objective</td>
+        <td>Abra o mapa para ver seu objetivo</td>
+        <td>42</td>
+        <td>33</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="79% of character limit used">
+            <span style="width: 79%"></span>
+          </div>
+          <small>79% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>TUT_HEAL</td>
+        <td>Use a Healing Flask to Recover Health</td>
+        <td>Use um frasco de cura para recuperar vida</td>
+        <td>48</td>
+        <td>41</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="85% of character limit used">
+            <span style="width: 85%"></span>
+          </div>
+          <small>85% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>TUT_SPRINT</td>
+        <td>Hold {button} While Moving to Sprint</td>
+        <td>Segure {button} enquanto se move para correr</td>
+        <td>48</td>
+        <td>44</td>
+        <td>{button}</td>
+        <td>
+          <div class="limit-meter" aria-label="92% of character limit used">
+            <span style="width: 92%"></span>
+          </div>
+          <small>92% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>TUT_EQUIP</td>
+        <td>Equip the Sun Charm from Your Inventory</td>
+        <td>Equipe o Amuleto Solar no inventário</td>
+        <td>44</td>
+        <td>36</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="82% of character limit used">
+            <span style="width: 82%"></span>
+          </div>
+          <small>82% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>ERROR_CONNECTION_LOST</td>
+        <td>Connection Lost</td>
+        <td>Conexão perdida</td>
+        <td>24</td>
+        <td>15</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="62% of character limit used">
+            <span style="width: 62%"></span>
+          </div>
+          <small>62% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>ERROR_CONNECTION_BODY</td>
+        <td>Check your connection and try again.</td>
+        <td>Verifique sua conexão e tente novamente.</td>
+        <td>52</td>
+        <td>40</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="77% of character limit used">
+            <span style="width: 77%"></span>
+          </div>
+          <small>77% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>ERROR_SAVE_FAILED</td>
+        <td>The game could not be saved.</td>
+        <td>Não foi possível salvar o jogo.</td>
+        <td>42</td>
+        <td>31</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="74% of character limit used">
+            <span style="width: 74%"></span>
+          </div>
+          <small>74% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>ERROR_CLOUD_SYNC</td>
+        <td>Cloud save data could not be synced.</td>
+        <td>Não foi possível sincronizar os dados na nuvem.</td>
+        <td>58</td>
+        <td>47</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="81% of character limit used">
+            <span style="width: 81%"></span>
+          </div>
+          <small>81% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>WARN_UNSAVED_PROGRESS</td>
+        <td>Unsaved Progress Will Be Lost</td>
+        <td>O progresso não salvo será perdido</td>
+        <td>42</td>
+        <td>34</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="81% of character limit used">
+            <span style="width: 81%"></span>
+          </div>
+          <small>81% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>WARN_RETURN_TITLE</td>
+        <td>Return to the Title Screen?</td>
+        <td>Voltar à tela de título?</td>
+        <td>34</td>
+        <td>24</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="71% of character limit used">
+            <span style="width: 71%"></span>
+          </div>
+          <small>71% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>QUEST_RETURN_VILLAGE</td>
+        <td>Return to the Village</td>
+        <td>Volte para a vila</td>
+        <td>28</td>
+        <td>17</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="61% of character limit used">
+            <span style="width: 61%"></span>
+          </div>
+          <small>61% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>QUEST_FIND_SHARDS</td>
+        <td>Find {count} Moon Shards</td>
+        <td>Encontre {count} Fragmentos Lunares</td>
+        <td>42</td>
+        <td>35</td>
+        <td>{count}</td>
+        <td>
+          <div class="limit-meter" aria-label="83% of character limit used">
+            <span style="width: 83%"></span>
+          </div>
+          <small>83% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>QUEST_COLLECT_HERBS</td>
+        <td>Collect {count} Silverleaf Herbs</td>
+        <td>Colete {count} Ervas Folha-de-Prata</td>
+        <td>44</td>
+        <td>35</td>
+        <td>{count}</td>
+        <td>
+          <div class="limit-meter" aria-label="80% of character limit used">
+            <span style="width: 80%"></span>
+          </div>
+          <small>80% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>QUEST_DEFEAT_ENEMIES</td>
+        <td>Defeat {count} Ashborn</td>
+        <td>Derrote {count} Cinéreos</td>
+        <td>36</td>
+        <td>24</td>
+        <td>{count}</td>
+        <td>
+          <div class="limit-meter" aria-label="67% of character limit used">
+            <span style="width: 67%"></span>
+          </div>
+          <small>67% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>NOTIF_RECEIVED_COINS</td>
+        <td>You received {amount} coins.</td>
+        <td>Você recebeu {amount} moedas.</td>
+        <td>42</td>
+        <td>29</td>
+        <td>{amount}</td>
+        <td>
+          <div class="limit-meter" aria-label="69% of character limit used">
+            <span style="width: 69%"></span>
+          </div>
+          <small>69% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>NOTIF_ITEM_ACQUIRED</td>
+        <td>{item_name} acquired.</td>
+        <td>Você obteve: {item_name}.</td>
+        <td>46</td>
+        <td>25</td>
+        <td>{item_name}</td>
+        <td>
+          <div class="limit-meter" aria-label="54% of character limit used">
+            <span style="width: 54%"></span>
+          </div>
+          <small>54% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>NOTIF_WELCOME_BACK</td>
+        <td>Welcome back, {player_name}.</td>
+        <td>Boas-vindas, {player_name}.</td>
+        <td>42</td>
+        <td>27</td>
+        <td>{player_name}</td>
+        <td>
+          <div class="limit-meter" aria-label="64% of character limit used">
+            <span style="width: 64%"></span>
+          </div>
+          <small>64% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>SETTINGS_LANGUAGE</td>
+        <td>Language</td>
+        <td>Idioma</td>
+        <td>16</td>
+        <td>6</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="38% of character limit used">
+            <span style="width: 38%"></span>
+          </div>
+          <small>38% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>SETTINGS_SUBTITLES</td>
+        <td>Subtitles</td>
+        <td>Legendas</td>
+        <td>16</td>
+        <td>8</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="50% of character limit used">
+            <span style="width: 50%"></span>
+          </div>
+          <small>50% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>SETTINGS_TEXT_SIZE</td>
+        <td>Text Size</td>
+        <td>Tamanho do texto</td>
+        <td>22</td>
+        <td>16</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="73% of character limit used">
+            <span style="width: 73%"></span>
+          </div>
+          <small>73% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>SETTINGS_REDUCE_MOTION</td>
+        <td>Reduce Motion</td>
+        <td>Reduzir movimento</td>
+        <td>22</td>
+        <td>17</td>
+        <td>—</td>
+        <td>
+          <div class="limit-meter" aria-label="77% of character limit used">
+            <span style="width: 77%"></span>
+          </div>
+          <small>77% used</small>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>PROMPT_TALK</td>
+        <td>[E] Talk</td>
+        <td>[E] Conversar</td>
+        <td>18</td>
+        <td>13</td>
+        <td>[E]</td>
+        <td>
+          <div class="limit-meter" aria-label="72% of character limit used">
+            <span style="width: 72%"></span>
+          </div>
+          <small>72% used</small>
+        </td>
+      </tr>
+    
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-heading">
+        <p class="eyebrow">Style guide</p>
+        <div>
+          <h2>A consistent player-facing voice.</h2>
+        </div>
+      </div>
+
+      <div class="pattern-grid">
+        <article class="case-card">
+          <h3>Sentence case</h3>
+          <p><strong>Novo jogo · Missão atualizada · Tamanho do texto</strong></p>
+          <p>English title case is not copied into Brazilian Portuguese.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>Buttons</h3>
+          <p><strong>Continuar · Voltar · Aceitar · Cancelar</strong></p>
+          <p>Standalone buttons use the infinitive.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>Tutorials</h3>
+          <p><strong>Segure · Pressione · Abra · Use · Equipe</strong></p>
+          <p>Direct instructions begin with an imperative verb.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>Quest objectives</h3>
+          <p><strong>Volte · Encontre · Colete · Derrote</strong></p>
+          <p>Objectives state the required player action directly.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>Error handling</h3>
+          <p><strong>Conexão perdida</strong></p>
+          <p>Concise headings are paired with clear recovery instructions.</p>
+        </article>
+
+        <article class="case-card">
+          <h3>Dynamic content</h3>
+          <p><strong>{count} · {amount} · {item_name} · {player_name}</strong></p>
+          <p>Variables remain unchanged and are repositioned only when grammar requires it.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-heading">
+        <p class="eyebrow">Quality assurance</p>
+        <div>
+          <h2>Linguistic and functional checks.</h2>
+        </div>
+      </div>
+
+      <div class="qa-grid">
+        <article class="qa-card">
+          <h3>Completed checks</h3>
+          <ul class="check-list">
+            <li>Source meaning preserved</li>
+            <li>Context reviewed for each string</li>
+            <li>Character limits respected</li>
+            <li>Variables preserved exactly</li>
+            <li>Input prompts retained</li>
+            <li>Sentence case applied</li>
+            <li>Buttons and objectives differentiated</li>
+            <li>Terminology applied consistently</li>
+          </ul>
+        </article>
+
+        <article class="qa-card">
+          <h3>In-context follow-up</h3>
+          <ul class="check-list risk-list">
+            <li>Test all strings in final UI layouts</li>
+            <li>Review controller glyph replacement</li>
+            <li>Test long player and item names</li>
+            <li>Verify pluralisation for dynamic quantities</li>
+            <li>Test accessibility text scaling</li>
+            <li>Run regression review after implementation</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="case-section-heading">
+        <p class="eyebrow">Outcome</p>
+        <div>
+          <h2>A reusable UI localization workflow.</h2>
+        </div>
+      </div>
+
+      <article class="case-card">
+        <p>The final deliverables combine source context, approved localization, character limits, protected variables, terminology, and decision notes in a format suitable for implementation and QA.</p>
+        <p>The case study demonstrates that effective UI localization depends on context, interface space, platform behaviour, gameplay function, and consistent player-facing language.</p>
+      </article>
+    </section>
+
+    <section class="case-cta">
+      <p class="eyebrow">Technical documentation</p>
+      <h2>Review the source and localized string databases.</h2>
+      <p>The public repository contains both CSV files, the approved terminology, character-count data, and implementation notes.</p>
+
+      <div class="actions">
+        <a class="button primary" href="https://github.com/celsorcorreia/Game-Localization-Portfolio/tree/main/localization-samples/ui-tutorial-localization" target="_blank" rel="noopener noreferrer">Open GitHub documentation</a>
+        <a class="button secondary" href="mailto:celsor.correia@gmail.com">Contact me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Celso Ricardo Correia.</p>
+    <p>Original UI localization sample for professional evaluation.</p>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
