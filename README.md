@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Game Localization Portfolio
 
 Professional portfolio focused on **game localization, terminology management, narrative consistency, and technical documentation** for English and Brazilian Portuguese.
@@ -57,4 +56,23 @@ This repository is a living portfolio. Samples and glossary entries should ident
 Unless a file states otherwise, written content, fictional settings, terminology, and localization samples remain the intellectual property of their respective authors and rights holders. Public visibility is for portfolio evaluation and does not grant permission for commercial reuse.
 =======
 # Game-Localization-Portfolio
->>>>>>> 6bf20af4df249cebcebf28f0b0ed6cf5986bf63d
+
+## Featured case studies
+
+### Iconia: Critters & Spells
+
+Card game keyword localization, concise rules, accessibility, and terminology management.
+
+### Khaoz Age RPG
+
+Narrative localization, dark fantasy voice, worldbuilding terminology, divine titles, and consistency across a large fictional universe.
+
+### Fifth Edition TTRPG Rules Localization
+
+English-to-Brazilian Portuguese rules localization based on the openly licensed SRD 5.1, with terminology, metric adaptation, and linguistic QA.
+
+## Live portfolio
+
+Visit the published portfolio:
+
+https://celsorcorreia.github.io/Game-Localization-Portfolio/
