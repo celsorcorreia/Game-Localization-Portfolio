@@ -1,840 +1,749 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Linguistic QA and bug reporting case study from English into Brazilian Portuguese by Celso Ricardo Correia.">
-  <title>Linguistic QA | Localization Case Study</title>
-  <link rel="canonical" href="https://celsorcorreia.github.io/Game-Localization-Portfolio/case-studies/linguistic-qa.html">
-  <link rel="stylesheet" href="../assets/css/style.css">
-
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Linguistic QA | Celso Ricardo Correia">
-  <meta property="og:description" content="English-to-Brazilian Portuguese LQA, bug reporting, terminology, UI, variables, tags, mechanics, and severity classification.">
-  <meta property="og:url" content="https://celsorcorreia.github.io/Game-Localization-Portfolio/case-studies/linguistic-qa.html">
-  <meta property="og:image" content="https://celsorcorreia.github.io/Game-Localization-Portfolio/assets/images/social-preview.png">
-  <meta name="twitter:card" content="summary_large_image">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Linguistic QA and bug reporting case study from English into Brazilian Portuguese by Celso Ricardo Correia." name="description"/>
+<title>Linguistic QA | Localization Case Study</title>
+<link href="https://celsorcorreia.github.io/Game-Localization-Portfolio/case-studies/linguistic-qa.html" rel="canonical"/>
+<link href="../assets/css/style.css" rel="stylesheet"/>
+<meta content="article" property="og:type"/>
+<meta content="Linguistic QA | Celso Ricardo Correia" property="og:title"/>
+<meta content="English-to-Brazilian Portuguese LQA, bug reporting, terminology, UI, variables, tags, mechanics, and severity classification." property="og:description"/>
+<meta content="https://celsorcorreia.github.io/Game-Localization-Portfolio/case-studies/linguistic-qa.html" property="og:url"/>
+<meta content="https://celsorcorreia.github.io/Game-Localization-Portfolio/assets/images/social-preview.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="../index.html" aria-label="Celso Ricardo Correia — Home">CRC<span>.</span></a>
-    <button
-      class="menu-toggle"
-      type="button"
-      aria-expanded="false"
-      aria-controls="primary-navigation"
-      aria-label="Open navigation"
-    >
+<header class="site-header">
+<a aria-label="Celso Ricardo Correia — Home" class="brand" href="../index.html">CRC<span>.</span></a>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" type="button">
       Menu
     </button>
-
-    <nav id="primary-navigation" aria-label="Primary navigation">
-      <a href="../about.html">About</a>
-      <a href="../index.html#expertise">Expertise</a>
-      <a href="../index.html#projects">Work</a>
-      <a href="../index.html#process">Process</a>
-      <a href="../resume.html">Resume</a>
-      <a href="../index.html#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main class="case-main">
-    <a class="case-back" href="../index.html#projects">← Back to selected work</a>
-
-    <section class="case-hero">
-      <p class="eyebrow">Linguistic QA case study</p>
-      <h1>In-context LQA<br>&amp; Bug Reporting</h1>
-      <p class="case-lead">An English-to-Brazilian Portuguese quality-assurance study covering terminology, context, UI constraints, variables, tags, grammar, mechanics, severity classification, and actionable correction reports.</p>
-
-      <div class="meta-grid">
-        <article class="meta-card">
-          <span class="meta-label">Language pair</span>
-          <span class="meta-value">English → PT-BR</span>
-        </article>
-        <article class="meta-card">
-          <span class="meta-label">Sample product</span>
-          <span class="meta-value">Emberwake</span>
-        </article>
-        <article class="meta-card">
-          <span class="meta-label">Build</span>
-          <span class="meta-value">0.9.14 · Windows 11</span>
-        </article>
-        <article class="meta-card">
-          <span class="meta-label">Content status</span>
-          <span class="meta-value">Original fictional sample</span>
-        </article>
-      </div>
-    </section>
-
-    <section class="case-section">
-      <div class="case-section-heading">
-        <p class="eyebrow">Project overview</p>
-        <div>
-          <h2>Quality assurance beyond proofreading.</h2>
-          <p>The review tests whether the localized build is linguistically natural, mechanically accurate, technically functional, and readable inside the actual interface.</p>
-        </div>
-      </div>
-
-      <article class="case-card">
-        <p><strong>Emberwake</strong> is a fictional fantasy action RPG created solely for this portfolio sample. All strings, screens, bugs, corrections, and reports are original examples.</p>
-        <p>The test pass covered menus, tutorials, combat objectives, inventory, quests, item tooltips, character information, codex entries, settings, and gameplay notifications at 1920 × 1080 and 1280 × 720.</p>
-      </article>
-    </section>
-
-
-    <section class="case-section">
-      <div class="case-section-heading">
-        <p class="eyebrow">Visual evidence</p>
-        <div>
-          <h2>QA findings made easy to scan.</h2>
-          <p>Original mock-ups summarise a complete issue report and the distribution of findings across the test pass.</p>
-        </div>
-      </div>
-
-      <div class="visual-grid">
-        <figure class="visual-card">
-          <img
-            src="../assets/images/linguistic-qa/issue-report.webp"
-            alt="Fictional critical linguistic QA report comparing English source, incorrect Brazilian Portuguese, and suggested correction"
-            loading="lazy"
-            width="1600"
-            height="900"
-          >
-          <figcaption>A representative Critical issue showing mechanical impact and an actionable correction.</figcaption>
-        </figure>
-
-        <figure class="visual-card">
-          <img
-            src="../assets/images/linguistic-qa/coverage-dashboard.webp"
-            alt="Linguistic QA dashboard showing total Critical, Major, and Minor issues across ten categories"
-            loading="lazy"
-            width="1600"
-            height="900"
-          >
-          <figcaption>The dashboard communicates severity, coverage, and release risk at a glance.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="case-section">
-      <div class="case-section-heading">
-        <p class="eyebrow">My role</p>
-        <div>
-          <h2>Reviewer, bug reporter, and localization specialist.</h2>
-          <p>The work combines source-target comparison, in-context testing, functional verification, severity assessment, correction proposals, and retest planning.</p>
-        </div>
-      </div>
-
-      <ul class="tag-list">
-        <li>Linguistic QA</li>
-        <li>Bug reporting</li>
-        <li>Terminology review</li>
-        <li>Functional testing</li>
-        <li>UI review</li>
-        <li>Mechanical validation</li>
-        <li>Fix verification</li>
-        <li>Regression planning</li>
-      </ul>
-    </section>
-
-    <section class="case-section">
-      <div class="case-section-heading">
-        <p class="eyebrow">Results</p>
-        <div>
-          <h2>20 documented issues across ten categories.</h2>
-          <p>Critical findings affected runtime values, formatting code, or gameplay meaning. Major and Minor findings covered context, terminology, interface constraints, grammar, punctuation, and consistency.</p>
-        </div>
-      </div>
-
-      <div class="meta-grid">
-        <article class="meta-card">
-          <span class="meta-label">Total issues</span>
-          <span class="meta-value">20</span>
-        </article>
-        <article class="meta-card">
-          <span class="meta-label">Critical</span>
-          <span class="meta-value">5</span>
-        </article>
-        <article class="meta-card">
-          <span class="meta-label">Major</span>
-          <span class="meta-value">9</span>
-        </article>
-        <article class="meta-card">
-          <span class="meta-label">Minor</span>
-          <span class="meta-value">6</span>
-        </article>
-      </div>
-
-      <div class="qa-grid lqa-status-grid">
-        <article class="qa-card">
-          <h3>Fixed</h3>
-          <p class="lqa-metric">15</p>
-          <p>Corrections applied and verified in the reviewed build.</p>
-        </article>
-        <article class="qa-card">
-          <h3>Pending retest</h3>
-          <p class="lqa-metric">5</p>
-          <p>Critical fixes that require validation in the next build.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="case-section">
-      <div class="case-section-heading">
-        <p class="eyebrow">Coverage</p>
-        <div>
-          <h2>Ten categories reviewed in context.</h2>
-        </div>
-      </div>
-
-      <div class="objectives-grid">
-        
-        <article class="case-card objective-card">
-          <span class="objective-number">01</span>
-          <h3>Terminology</h3>
-          <p>Approved glossary terms, naming conventions, and unapproved variants.</p>
-        </article>
-    
-        <article class="case-card objective-card">
-          <span class="objective-number">02</span>
-          <h3>Grammar</h3>
-          <p>Agreement, syntax, number, gender, and natural Brazilian Portuguese.</p>
-        </article>
-    
-        <article class="case-card objective-card">
-          <span class="objective-number">03</span>
-          <h3>Context</h3>
-          <p>Meaning selected according to the actual screen, action, and gameplay situation.</p>
-        </article>
-    
-        <article class="case-card objective-card">
-          <span class="objective-number">04</span>
-          <h3>UI overflow</h3>
-          <p>Clipping, truncation, wrapping, and fixed-width interface constraints.</p>
-        </article>
-    
-        <article class="case-card objective-card">
-          <span class="objective-number">05</span>
-          <h3>Variables</h3>
-          <p>Runtime placeholders, quantities, player names, rewards, and dynamic values.</p>
-        </article>
-    
-        <article class="case-card objective-card">
-          <span class="objective-number">06</span>
-          <h3>Tags</h3>
-          <p>Markup, styling tags, input prompts, and non-translatable code.</p>
-        </article>
-    
-        <article class="case-card objective-card">
-          <span class="objective-number">07</span>
-          <h3>Capitalization</h3>
-          <p>Sentence case, headings, labels, and style-guide compliance.</p>
-        </article>
-    
-        <article class="case-card objective-card">
-          <span class="objective-number">08</span>
-          <h3>Mechanics</h3>
-          <p>Percentages, conditions, durations, bonuses, penalties, and rule accuracy.</p>
-        </article>
-    
-        <article class="case-card objective-card">
-          <span class="objective-number">09</span>
-          <h3>Punctuation</h3>
-          <p>Colons, question marks, spacing, and interface punctuation patterns.</p>
-        </article>
-    
-        <article class="case-card objective-card">
-          <span class="objective-number">10</span>
-          <h3>Consistency</h3>
-          <p>Repeated concepts, class names, objects, and cross-screen terminology.</p>
-        </article>
-    
-      </div>
-    </section>
-
-    <section class="case-section">
-      <div class="case-section-heading">
-        <p class="eyebrow">Severity model</p>
-        <div>
-          <h2>Priority based on player impact.</h2>
-        </div>
-      </div>
-
-      <div class="pattern-grid">
-        <article class="case-card">
-          <span class="severity-badge severity-critical">Critical</span>
-          <h3>Function or mechanics</h3>
-          <p>Broken variables, invalid tags, missing essential values, or translations that change gameplay rules.</p>
-        </article>
-        <article class="case-card">
-          <span class="severity-badge severity-major">Major</span>
-          <h3>Meaning or usability</h3>
-          <p>Serious contextual errors, glossary conflicts, misleading wording, or severe UI presentation problems.</p>
-        </article>
-        <article class="case-card">
-          <span class="severity-badge severity-minor">Minor</span>
-          <h3>Language or style</h3>
-          <p>Grammar, punctuation, capitalization, and style issues that do not prevent comprehension.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="case-section">
-      <div class="case-section-heading">
-        <p class="eyebrow">Selected reports</p>
-        <div>
-          <h2>One representative finding from each category.</h2>
-          <p>Each report separates the source, current localization, issue, correction, expected result, and actual result.</p>
-        </div>
-      </div>
-
-      <div class="decision-grid">
-        
-        <article class="decision-card issue-card">
-          <div class="issue-heading">
-            <span class="issue-id">LQA-001</span>
-            <span class="severity-badge severity-major">Major</span>
-          </div>
-          <h3>Terminology · Inventory</h3>
-          <div class="language-block">
-            <span class="language-label">Source</span>
+<nav aria-label="Primary navigation" id="primary-navigation">
+<a href="../about.html">About</a>
+<a href="../index.html#expertise">Expertise</a>
+<a href="../index.html#projects">Work</a>
+<a href="../index.html#process">Process</a>
+<a href="../resume.html">Resume</a>
+<a href="../index.html#contact">Contact</a>
+</nav>
+</header>
+<main class="case-main" id="top">
+<a class="case-back" href="../index.html#projects">← Back to selected work</a>
+<section class="case-hero">
+<p class="eyebrow">Linguistic QA case study</p>
+<h1>In-context LQA<br/>&amp; Bug Reporting</h1>
+<p class="case-lead">An English-to-Brazilian Portuguese quality-assurance study covering terminology, context, UI constraints, variables, tags, grammar, mechanics, severity classification, and actionable correction reports.</p>
+<div class="meta-grid">
+<article class="meta-card">
+<span class="meta-label">Language pair</span>
+<span class="meta-value">English → PT-BR</span>
+</article>
+<article class="meta-card">
+<span class="meta-label">Sample product</span>
+<span class="meta-value">Emberwake</span>
+</article>
+<article class="meta-card">
+<span class="meta-label">Build</span>
+<span class="meta-value">0.9.14 · Windows 11</span>
+</article>
+<article class="meta-card">
+<span class="meta-label">Content status</span>
+<span class="meta-value">Original fictional sample</span>
+</article>
+</div>
+</section><nav aria-label="Case study sections" class="case-index">
+<span class="case-index-label">On this page</span>
+<a href="#overview">Overview</a><a href="#visual-evidence">Visual evidence</a><a href="#selected-reports">Selected reports</a><a href="#issue-log">Issue log</a><a href="#quality-assurance">QA checklist</a><a href="#outcome">Outcome</a></nav>
+<section class="case-section" id="overview">
+<div class="case-section-heading">
+<p class="eyebrow">Project overview</p>
+<div>
+<h2>Quality assurance beyond proofreading.</h2>
+<p>The review tests whether the localized build is linguistically natural, mechanically accurate, technically functional, and readable inside the actual interface.</p>
+</div>
+</div>
+<article class="case-card">
+<p><strong>Emberwake</strong> is a fictional fantasy action RPG created solely for this portfolio sample. All strings, screens, bugs, corrections, and reports are original examples.</p>
+<p>The test pass covered menus, tutorials, combat objectives, inventory, quests, item tooltips, character information, codex entries, settings, and gameplay notifications at 1920 × 1080 and 1280 × 720.</p>
+</article>
+</section>
+<section class="case-section" id="visual-evidence">
+<div class="case-section-heading">
+<p class="eyebrow">Visual evidence</p>
+<div>
+<h2>QA findings made easy to scan.</h2>
+<p>Original mock-ups summarise a complete issue report and the distribution of findings across the test pass.</p>
+</div>
+</div>
+<div class="visual-grid">
+<figure class="visual-card">
+<img alt="Fictional critical linguistic QA report comparing English source, incorrect Brazilian Portuguese, and suggested correction" height="900" loading="lazy" src="../assets/images/linguistic-qa/issue-report.webp" width="1600"/>
+<figcaption>A representative Critical issue showing mechanical impact and an actionable correction.</figcaption>
+</figure>
+<figure class="visual-card">
+<img alt="Linguistic QA dashboard showing total Critical, Major, and Minor issues across ten categories" height="900" loading="lazy" src="../assets/images/linguistic-qa/coverage-dashboard.webp" width="1600"/>
+<figcaption>The dashboard communicates severity, coverage, and release risk at a glance.</figcaption>
+</figure>
+</div>
+</section>
+<section class="case-section">
+<div class="case-section-heading">
+<p class="eyebrow">My role</p>
+<div>
+<h2>Reviewer, bug reporter, and localization specialist.</h2>
+<p>The work combines source-target comparison, in-context testing, functional verification, severity assessment, correction proposals, and retest planning.</p>
+</div>
+</div>
+<ul class="tag-list">
+<li>Linguistic QA</li>
+<li>Bug reporting</li>
+<li>Terminology review</li>
+<li>Functional testing</li>
+<li>UI review</li>
+<li>Mechanical validation</li>
+<li>Fix verification</li>
+<li>Regression planning</li>
+</ul>
+</section>
+<section class="case-section">
+<div class="case-section-heading">
+<p class="eyebrow">Results</p>
+<div>
+<h2>20 documented issues across ten categories.</h2>
+<p>Critical findings affected runtime values, formatting code, or gameplay meaning. Major and Minor findings covered context, terminology, interface constraints, grammar, punctuation, and consistency.</p>
+</div>
+</div>
+<div class="meta-grid">
+<article class="meta-card">
+<span class="meta-label">Total issues</span>
+<span class="meta-value">20</span>
+</article>
+<article class="meta-card">
+<span class="meta-label">Critical</span>
+<span class="meta-value">5</span>
+</article>
+<article class="meta-card">
+<span class="meta-label">Major</span>
+<span class="meta-value">9</span>
+</article>
+<article class="meta-card">
+<span class="meta-label">Minor</span>
+<span class="meta-value">6</span>
+</article>
+</div>
+<div class="qa-grid lqa-status-grid">
+<article class="qa-card">
+<h3>Fixed</h3>
+<p class="lqa-metric">15</p>
+<p>Corrections applied and verified in the reviewed build.</p>
+</article>
+<article class="qa-card">
+<h3>Pending retest</h3>
+<p class="lqa-metric">5</p>
+<p>Critical fixes that require validation in the next build.</p>
+</article>
+</div>
+</section>
+<section class="case-section">
+<div class="case-section-heading">
+<p class="eyebrow">Coverage</p>
+<div>
+<h2>Ten categories reviewed in context.</h2>
+</div>
+</div>
+<div class="objectives-grid">
+<article class="case-card objective-card">
+<span class="objective-number">01</span>
+<h3>Terminology</h3>
+<p>Approved glossary terms, naming conventions, and unapproved variants.</p>
+</article>
+<article class="case-card objective-card">
+<span class="objective-number">02</span>
+<h3>Grammar</h3>
+<p>Agreement, syntax, number, gender, and natural Brazilian Portuguese.</p>
+</article>
+<article class="case-card objective-card">
+<span class="objective-number">03</span>
+<h3>Context</h3>
+<p>Meaning selected according to the actual screen, action, and gameplay situation.</p>
+</article>
+<article class="case-card objective-card">
+<span class="objective-number">04</span>
+<h3>UI overflow</h3>
+<p>Clipping, truncation, wrapping, and fixed-width interface constraints.</p>
+</article>
+<article class="case-card objective-card">
+<span class="objective-number">05</span>
+<h3>Variables</h3>
+<p>Runtime placeholders, quantities, player names, rewards, and dynamic values.</p>
+</article>
+<article class="case-card objective-card">
+<span class="objective-number">06</span>
+<h3>Tags</h3>
+<p>Markup, styling tags, input prompts, and non-translatable code.</p>
+</article>
+<article class="case-card objective-card">
+<span class="objective-number">07</span>
+<h3>Capitalization</h3>
+<p>Sentence case, headings, labels, and style-guide compliance.</p>
+</article>
+<article class="case-card objective-card">
+<span class="objective-number">08</span>
+<h3>Mechanics</h3>
+<p>Percentages, conditions, durations, bonuses, penalties, and rule accuracy.</p>
+</article>
+<article class="case-card objective-card">
+<span class="objective-number">09</span>
+<h3>Punctuation</h3>
+<p>Colons, question marks, spacing, and interface punctuation patterns.</p>
+</article>
+<article class="case-card objective-card">
+<span class="objective-number">10</span>
+<h3>Consistency</h3>
+<p>Repeated concepts, class names, objects, and cross-screen terminology.</p>
+</article>
+</div>
+</section>
+<section class="case-section">
+<div class="case-section-heading">
+<p class="eyebrow">Severity model</p>
+<div>
+<h2>Priority based on player impact.</h2>
+</div>
+</div>
+<div class="pattern-grid">
+<article class="case-card">
+<span class="severity-badge severity-critical">Critical</span>
+<h3>Function or mechanics</h3>
+<p>Broken variables, invalid tags, missing essential values, or translations that change gameplay rules.</p>
+</article>
+<article class="case-card">
+<span class="severity-badge severity-major">Major</span>
+<h3>Meaning or usability</h3>
+<p>Serious contextual errors, glossary conflicts, misleading wording, or severe UI presentation problems.</p>
+</article>
+<article class="case-card">
+<span class="severity-badge severity-minor">Minor</span>
+<h3>Language or style</h3>
+<p>Grammar, punctuation, capitalization, and style issues that do not prevent comprehension.</p>
+</article>
+</div>
+</section>
+<section class="case-section" id="selected-reports">
+<div class="case-section-heading">
+<p class="eyebrow">Selected reports</p>
+<div>
+<h2>One representative finding from each category.</h2>
+<p>Each report separates the source, current localization, issue, correction, expected result, and actual result.</p>
+</div>
+</div>
+<div class="decision-grid">
+<article class="decision-card issue-card">
+<div class="issue-heading">
+<span class="issue-id">LQA-001</span>
+<span class="severity-badge severity-major">Major</span>
+</div>
+<h3>Terminology · Inventory</h3>
+<div class="language-block">
+<span class="language-label">Source</span>
             Health Potion
           </div>
-          <div class="language-block">
-            <span class="language-label">Current PT-BR</span>
+<div class="language-block">
+<span class="language-label">Current PT-BR</span>
             Poção de Saúde
           </div>
-          <p><strong>Issue:</strong> The item name does not follow the approved glossary term used elsewhere in the build.</p>
-          <div class="language-block">
-            <span class="language-label">Suggested correction</span>
+<p><strong>Issue:</strong> The item name does not follow the approved glossary term used elsewhere in the build.</p>
+<div class="language-block">
+<span class="language-label">Suggested correction</span>
             Poção de Cura
           </div>
-          <p><strong>Expected:</strong> The approved term Poção de Cura is used consistently.</p>
-          <p><strong>Actual:</strong> The item is displayed as Poção de Saúde.</p>
-        </article>
-    
-        <article class="decision-card issue-card">
-          <div class="issue-heading">
-            <span class="issue-id">LQA-003</span>
-            <span class="severity-badge severity-minor">Minor</span>
-          </div>
-          <h3>Grammar · Loot Notification</h3>
-          <div class="language-block">
-            <span class="language-label">Source</span>
+<p><strong>Expected:</strong> The approved term Poção de Cura is used consistently.</p>
+<p><strong>Actual:</strong> The item is displayed as Poção de Saúde.</p>
+</article>
+<article class="decision-card issue-card">
+<div class="issue-heading">
+<span class="issue-id">LQA-003</span>
+<span class="severity-badge severity-minor">Minor</span>
+</div>
+<h3>Grammar · Loot Notification</h3>
+<div class="language-block">
+<span class="language-label">Source</span>
             You found 1 coin.
           </div>
-          <div class="language-block">
-            <span class="language-label">Current PT-BR</span>
+<div class="language-block">
+<span class="language-label">Current PT-BR</span>
             Você encontrou 1 moedas.
           </div>
-          <p><strong>Issue:</strong> The noun does not agree with the singular numeral.</p>
-          <div class="language-block">
-            <span class="language-label">Suggested correction</span>
+<p><strong>Issue:</strong> The noun does not agree with the singular numeral.</p>
+<div class="language-block">
+<span class="language-label">Suggested correction</span>
             Você encontrou 1 moeda.
           </div>
-          <p><strong>Expected:</strong> Singular agreement is used with 1.</p>
-          <p><strong>Actual:</strong> The plural form moedas is displayed.</p>
-        </article>
-    
-        <article class="decision-card issue-card">
-          <div class="issue-heading">
-            <span class="issue-id">LQA-005</span>
-            <span class="severity-badge severity-major">Major</span>
-          </div>
-          <h3>Context · Pause Menu</h3>
-          <div class="language-block">
-            <span class="language-label">Source</span>
+<p><strong>Expected:</strong> Singular agreement is used with 1.</p>
+<p><strong>Actual:</strong> The plural form moedas is displayed.</p>
+</article>
+<article class="decision-card issue-card">
+<div class="issue-heading">
+<span class="issue-id">LQA-005</span>
+<span class="severity-badge severity-major">Major</span>
+</div>
+<h3>Context · Pause Menu</h3>
+<div class="language-block">
+<span class="language-label">Source</span>
             Resume
           </div>
-          <div class="language-block">
-            <span class="language-label">Current PT-BR</span>
+<div class="language-block">
+<span class="language-label">Current PT-BR</span>
             Currículo
           </div>
-          <p><strong>Issue:</strong> The translation uses the noun meaning professional résumé instead of the gameplay action.</p>
-          <div class="language-block">
-            <span class="language-label">Suggested correction</span>
+<p><strong>Issue:</strong> The translation uses the noun meaning professional résumé instead of the gameplay action.</p>
+<div class="language-block">
+<span class="language-label">Suggested correction</span>
             Continuar
           </div>
-          <p><strong>Expected:</strong> The button resumes gameplay.</p>
-          <p><strong>Actual:</strong> The button is labelled Currículo.</p>
-        </article>
-    
-        <article class="decision-card issue-card">
-          <div class="issue-heading">
-            <span class="issue-id">LQA-007</span>
-            <span class="severity-badge severity-major">Major</span>
-          </div>
-          <h3>UI overflow · Settings</h3>
-          <div class="language-block">
-            <span class="language-label">Source</span>
+<p><strong>Expected:</strong> The button resumes gameplay.</p>
+<p><strong>Actual:</strong> The button is labelled Currículo.</p>
+</article>
+<article class="decision-card issue-card">
+<div class="issue-heading">
+<span class="issue-id">LQA-007</span>
+<span class="severity-badge severity-major">Major</span>
+</div>
+<h3>UI overflow · Settings</h3>
+<div class="language-block">
+<span class="language-label">Source</span>
             Accessibility
           </div>
-          <div class="language-block">
-            <span class="language-label">Current PT-BR</span>
+<div class="language-block">
+<span class="language-label">Current PT-BR</span>
             Configurações de Acessibilidade
           </div>
-          <p><strong>Issue:</strong> The localized label exceeds the fixed-width tab and overlaps the adjacent icon.</p>
-          <div class="language-block">
-            <span class="language-label">Suggested correction</span>
+<p><strong>Issue:</strong> The localized label exceeds the fixed-width tab and overlaps the adjacent icon.</p>
+<div class="language-block">
+<span class="language-label">Suggested correction</span>
             Acessibilidade
           </div>
-          <p><strong>Expected:</strong> The label fits without clipping or overlap.</p>
-          <p><strong>Actual:</strong> The string overlaps the tab icon.</p>
-        </article>
-    
-        <article class="decision-card issue-card">
-          <div class="issue-heading">
-            <span class="issue-id">LQA-009</span>
-            <span class="severity-badge severity-critical">Critical</span>
-          </div>
-          <h3>Variables · Quest Reward</h3>
-          <div class="language-block">
-            <span class="language-label">Source</span>
+<p><strong>Expected:</strong> The label fits without clipping or overlap.</p>
+<p><strong>Actual:</strong> The string overlaps the tab icon.</p>
+</article>
+<article class="decision-card issue-card">
+<div class="issue-heading">
+<span class="issue-id">LQA-009</span>
+<span class="severity-badge severity-critical">Critical</span>
+</div>
+<h3>Variables · Quest Reward</h3>
+<div class="language-block">
+<span class="language-label">Source</span>
             You received {amount} coins.
           </div>
-          <div class="language-block">
-            <span class="language-label">Current PT-BR</span>
+<div class="language-block">
+<span class="language-label">Current PT-BR</span>
             Você recebeu {quantidade} moedas.
           </div>
-          <p><strong>Issue:</strong> The protected variable name was translated, so the runtime value is not injected.</p>
-          <div class="language-block">
-            <span class="language-label">Suggested correction</span>
+<p><strong>Issue:</strong> The protected variable name was translated, so the runtime value is not injected.</p>
+<div class="language-block">
+<span class="language-label">Suggested correction</span>
             Você recebeu {amount} moedas.
           </div>
-          <p><strong>Expected:</strong> The numerical reward replaces {amount}.</p>
-          <p><strong>Actual:</strong> The literal text {quantidade} appears on screen.</p>
-        </article>
-    
-        <article class="decision-card issue-card">
-          <div class="issue-heading">
-            <span class="issue-id">LQA-011</span>
-            <span class="severity-badge severity-critical">Critical</span>
-          </div>
-          <h3>Tags · Tutorial</h3>
-          <div class="language-block">
-            <span class="language-label">Source</span>
+<p><strong>Expected:</strong> The numerical reward replaces {amount}.</p>
+<p><strong>Actual:</strong> The literal text {quantidade} appears on screen.</p>
+</article>
+<article class="decision-card issue-card">
+<div class="issue-heading">
+<span class="issue-id">LQA-011</span>
+<span class="severity-badge severity-critical">Critical</span>
+</div>
+<h3>Tags · Tutorial</h3>
+<div class="language-block">
+<span class="language-label">Source</span>
             &lt;color=#FFCC00&gt;Hold [E]&lt;/color&gt; to interact.
           </div>
-          <div class="language-block">
-            <span class="language-label">Current PT-BR</span>
+<div class="language-block">
+<span class="language-label">Current PT-BR</span>
             &lt;cor=#FFCC00&gt;Segure [E]&lt;/cor&gt; para interagir.
           </div>
-          <p><strong>Issue:</strong> The markup tags were translated and are no longer recognised by the UI parser.</p>
-          <div class="language-block">
-            <span class="language-label">Suggested correction</span>
+<p><strong>Issue:</strong> The markup tags were translated and are no longer recognised by the UI parser.</p>
+<div class="language-block">
+<span class="language-label">Suggested correction</span>
             &lt;color=#FFCC00&gt;Segure [E]&lt;/color&gt; para interagir.
           </div>
-          <p><strong>Expected:</strong> The interaction command is highlighted in yellow.</p>
-          <p><strong>Actual:</strong> Raw markup is displayed in the tutorial text.</p>
-        </article>
-    
-        <article class="decision-card issue-card">
-          <div class="issue-heading">
-            <span class="issue-id">LQA-013</span>
-            <span class="severity-badge severity-minor">Minor</span>
-          </div>
-          <h3>Capitalization · Quest Notification</h3>
-          <div class="language-block">
-            <span class="language-label">Source</span>
+<p><strong>Expected:</strong> The interaction command is highlighted in yellow.</p>
+<p><strong>Actual:</strong> Raw markup is displayed in the tutorial text.</p>
+</article>
+<article class="decision-card issue-card">
+<div class="issue-heading">
+<span class="issue-id">LQA-013</span>
+<span class="severity-badge severity-minor">Minor</span>
+</div>
+<h3>Capitalization · Quest Notification</h3>
+<div class="language-block">
+<span class="language-label">Source</span>
             New Quest
           </div>
-          <div class="language-block">
-            <span class="language-label">Current PT-BR</span>
+<div class="language-block">
+<span class="language-label">Current PT-BR</span>
             nova missão
           </div>
-          <p><strong>Issue:</strong> The notification heading does not follow the approved sentence-case pattern.</p>
-          <div class="language-block">
-            <span class="language-label">Suggested correction</span>
+<p><strong>Issue:</strong> The notification heading does not follow the approved sentence-case pattern.</p>
+<div class="language-block">
+<span class="language-label">Suggested correction</span>
             Nova missão
           </div>
-          <p><strong>Expected:</strong> The first word of the heading is capitalised.</p>
-          <p><strong>Actual:</strong> The heading begins with a lowercase letter.</p>
-        </article>
-    
-        <article class="decision-card issue-card">
-          <div class="issue-heading">
-            <span class="issue-id">LQA-015</span>
-            <span class="severity-badge severity-critical">Critical</span>
-          </div>
-          <h3>Mechanics · Skill Description</h3>
-          <div class="language-block">
-            <span class="language-label">Source</span>
+<p><strong>Expected:</strong> The first word of the heading is capitalised.</p>
+<p><strong>Actual:</strong> The heading begins with a lowercase letter.</p>
+</article>
+<article class="decision-card issue-card">
+<div class="issue-heading">
+<span class="issue-id">LQA-015</span>
+<span class="severity-badge severity-critical">Critical</span>
+</div>
+<h3>Mechanics · Skill Description</h3>
+<div class="language-block">
+<span class="language-label">Source</span>
             Deal 25% more damage while below 30% health.
           </div>
-          <div class="language-block">
-            <span class="language-label">Current PT-BR</span>
+<div class="language-block">
+<span class="language-label">Current PT-BR</span>
             Cause 25% do dano enquanto estiver com menos de 30% de vida.
           </div>
-          <p><strong>Issue:</strong> The localization changes a +25% damage bonus into dealing only 25% of normal damage.</p>
-          <div class="language-block">
-            <span class="language-label">Suggested correction</span>
+<p><strong>Issue:</strong> The localization changes a +25% damage bonus into dealing only 25% of normal damage.</p>
+<div class="language-block">
+<span class="language-label">Suggested correction</span>
             Cause 25% a mais de dano enquanto estiver com menos de 30% dos Pontos de Vida.
           </div>
-          <p><strong>Expected:</strong> The description communicates a 25% increase.</p>
-          <p><strong>Actual:</strong> The description implies damage is reduced to 25%.</p>
-        </article>
-    
-        <article class="decision-card issue-card">
-          <div class="issue-heading">
-            <span class="issue-id">LQA-017</span>
-            <span class="severity-badge severity-minor">Minor</span>
-          </div>
-          <h3>Punctuation · Quest Summary</h3>
-          <div class="language-block">
-            <span class="language-label">Source</span>
+<p><strong>Expected:</strong> The description communicates a 25% increase.</p>
+<p><strong>Actual:</strong> The description implies damage is reduced to 25%.</p>
+</article>
+<article class="decision-card issue-card">
+<div class="issue-heading">
+<span class="issue-id">LQA-017</span>
+<span class="severity-badge severity-minor">Minor</span>
+</div>
+<h3>Punctuation · Quest Summary</h3>
+<div class="language-block">
+<span class="language-label">Source</span>
             Reward: 500 XP
           </div>
-          <div class="language-block">
-            <span class="language-label">Current PT-BR</span>
+<div class="language-block">
+<span class="language-label">Current PT-BR</span>
             Recompensa 500 XP
           </div>
-          <p><strong>Issue:</strong> The colon separating the label and value is missing.</p>
-          <div class="language-block">
-            <span class="language-label">Suggested correction</span>
+<p><strong>Issue:</strong> The colon separating the label and value is missing.</p>
+<div class="language-block">
+<span class="language-label">Suggested correction</span>
             Recompensa: 500 XP
           </div>
-          <p><strong>Expected:</strong> The label and value are separated by a colon.</p>
-          <p><strong>Actual:</strong> The punctuation is missing.</p>
-        </article>
-    
-        <article class="decision-card issue-card">
-          <div class="issue-heading">
-            <span class="issue-id">LQA-019</span>
-            <span class="severity-badge severity-major">Major</span>
-          </div>
-          <h3>Consistency · World / Tutorial</h3>
-          <div class="language-block">
-            <span class="language-label">Source</span>
+<p><strong>Expected:</strong> The label and value are separated by a colon.</p>
+<p><strong>Actual:</strong> The punctuation is missing.</p>
+</article>
+<article class="decision-card issue-card">
+<div class="issue-heading">
+<span class="issue-id">LQA-019</span>
+<span class="severity-badge severity-major">Major</span>
+</div>
+<h3>Consistency · World / Tutorial</h3>
+<div class="language-block">
+<span class="language-label">Source</span>
             Save Point
           </div>
-          <div class="language-block">
-            <span class="language-label">Current PT-BR</span>
+<div class="language-block">
+<span class="language-label">Current PT-BR</span>
             Ponto de Salvamento / Ponto de Save
           </div>
-          <p><strong>Issue:</strong> Two different translations are used for the same gameplay object.</p>
-          <div class="language-block">
-            <span class="language-label">Suggested correction</span>
+<p><strong>Issue:</strong> Two different translations are used for the same gameplay object.</p>
+<div class="language-block">
+<span class="language-label">Suggested correction</span>
             Ponto de Salvamento
           </div>
-          <p><strong>Expected:</strong> The same approved term is used in both locations.</p>
-          <p><strong>Actual:</strong> Two variants are displayed.</p>
-        </article>
-    
-      </div>
-    </section>
-
-    <section class="case-section">
-      <div class="case-section-heading">
-        <p class="eyebrow">Complete issue log</p>
-        <div>
-          <h2>A traceable bug database.</h2>
-          <p>The table below contains all 20 findings. The downloadable CSV in the repository includes full reproduction steps and expected-versus-actual fields.</p>
-        </div>
-      </div>
-
-      <div class="table-wrap">
-        <table class="case-table issue-table">
-          <thead>
-            <tr>
-              <th>ID</th>
-              <th>Category</th>
-              <th>Severity</th>
-              <th>Screen</th>
-              <th>Issue</th>
-              <th>Suggested correction</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            <tr>
-              <td>LQA-001</td>
-              <td>Terminology</td>
-              <td><span class="severity-badge severity-major">Major</span></td>
-              <td>Inventory</td>
-              <td>The item name does not follow the approved glossary term used elsewhere in the build.</td>
-              <td>Poção de Cura</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-002</td>
-              <td>Terminology</td>
-              <td><span class="severity-badge severity-major">Major</span></td>
-              <td>World Map</td>
-              <td>The string conflicts with the approved navigation term used in tutorials and map prompts.</td>
-              <td>Viagem Rápida</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-003</td>
-              <td>Grammar</td>
-              <td><span class="severity-badge severity-minor">Minor</span></td>
-              <td>Loot Notification</td>
-              <td>The noun does not agree with the singular numeral.</td>
-              <td>Você encontrou 1 moeda.</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-004</td>
-              <td>Grammar</td>
-              <td><span class="severity-badge severity-minor">Minor</span></td>
-              <td>Equipment</td>
-              <td>The adjective does not agree with the feminine noun espada.</td>
-              <td>A espada lendária foi equipada.</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-005</td>
-              <td>Context</td>
-              <td><span class="severity-badge severity-major">Major</span></td>
-              <td>Pause Menu</td>
-              <td>The translation uses the noun meaning professional résumé instead of the gameplay action.</td>
-              <td>Continuar</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-006</td>
-              <td>Context</td>
-              <td><span class="severity-badge severity-major">Major</span></td>
-              <td>Social Menu</td>
-              <td>The string refers to the player&#x27;s adventuring group, not a celebration.</td>
-              <td>Grupo</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-007</td>
-              <td>UI overflow</td>
-              <td><span class="severity-badge severity-major">Major</span></td>
-              <td>Settings</td>
-              <td>The localized label exceeds the fixed-width tab and overlaps the adjacent icon.</td>
-              <td>Acessibilidade</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-008</td>
-              <td>UI overflow</td>
-              <td><span class="severity-badge severity-major">Major</span></td>
-              <td>Inventory Toast</td>
-              <td>The toast exceeds two lines and is truncated before the final word.</td>
-              <td>Inventário cheio.</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-009</td>
-              <td>Variables</td>
-              <td><span class="severity-badge severity-critical">Critical</span></td>
-              <td>Quest Reward</td>
-              <td>The protected variable name was translated, so the runtime value is not injected.</td>
-              <td>Você recebeu {amount} moedas.</td>
-              <td><span class="status-badge status-retest">Retest</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-010</td>
-              <td>Variables</td>
-              <td><span class="severity-badge severity-critical">Critical</span></td>
-              <td>Combat Objective</td>
-              <td>The quantity variable was removed, preventing the objective from displaying the required target.</td>
-              <td>Derrote {count} inimigos.</td>
-              <td><span class="status-badge status-retest">Retest</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-011</td>
-              <td>Tags</td>
-              <td><span class="severity-badge severity-critical">Critical</span></td>
-              <td>Tutorial</td>
-              <td>The markup tags were translated and are no longer recognised by the UI parser.</td>
-              <td>&lt;color=#FFCC00&gt;Segure [E]&lt;/color&gt; para interagir.</td>
-              <td><span class="status-badge status-retest">Retest</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-012</td>
-              <td>Tags</td>
-              <td><span class="severity-badge severity-major">Major</span></td>
-              <td>Codex</td>
-              <td>The closing bold tag is missing, causing the remaining article to stay bold.</td>
-              <td>&lt;b&gt;Fraqueza:&lt;/b&gt; Gelo</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-013</td>
-              <td>Capitalization</td>
-              <td><span class="severity-badge severity-minor">Minor</span></td>
-              <td>Quest Notification</td>
-              <td>The notification heading does not follow the approved sentence-case pattern.</td>
-              <td>Nova missão</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-014</td>
-              <td>Capitalization</td>
-              <td><span class="severity-badge severity-minor">Minor</span></td>
-              <td>Character Sheet</td>
-              <td>The label uses all caps while the interface style guide requires sentence case.</td>
-              <td>Pontos de vida</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-015</td>
-              <td>Mechanics</td>
-              <td><span class="severity-badge severity-critical">Critical</span></td>
-              <td>Skill Description</td>
-              <td>The localization changes a +25% damage bonus into dealing only 25% of normal damage.</td>
-              <td>Cause 25% a mais de dano enquanto estiver com menos de 30% dos Pontos de Vida.</td>
-              <td><span class="status-badge status-retest">Retest</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-016</td>
-              <td>Mechanics</td>
-              <td><span class="severity-badge severity-critical">Critical</span></td>
-              <td>Item Tooltip</td>
-              <td>The translation changes a two-second reduction into setting every cooldown to two seconds.</td>
-              <td>Reduz em 2 segundos o tempo de recarga das habilidades.</td>
-              <td><span class="status-badge status-retest">Retest</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-017</td>
-              <td>Punctuation</td>
-              <td><span class="severity-badge severity-minor">Minor</span></td>
-              <td>Quest Summary</td>
-              <td>The colon separating the label and value is missing.</td>
-              <td>Recompensa: 500 XP</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-018</td>
-              <td>Punctuation</td>
-              <td><span class="severity-badge severity-minor">Minor</span></td>
-              <td>Confirmation Dialog</td>
-              <td>An incorrect space appears before the question mark.</td>
-              <td>Tem certeza?</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-019</td>
-              <td>Consistency</td>
-              <td><span class="severity-badge severity-major">Major</span></td>
-              <td>World / Tutorial</td>
-              <td>Two different translations are used for the same gameplay object.</td>
-              <td>Ponto de Salvamento</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-            <tr>
-              <td>LQA-020</td>
-              <td>Consistency</td>
-              <td><span class="severity-badge severity-major">Major</span></td>
-              <td>Class Selection / Codex</td>
-              <td>The class name changes between character creation and codex entries.</td>
-              <td>Patrulheiro</td>
-              <td><span class="status-badge status-fixed">Fixed</span></td>
-            </tr>
-    
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="case-section">
-      <div class="case-section-heading">
-        <p class="eyebrow">Workflow</p>
-        <div>
-          <h2>From preparation to retest.</h2>
-        </div>
-      </div>
-
-      <ol class="process">
-        <li><strong>Prepare</strong><span>Review terminology, style rules, protected variables, markup, platform, build, and test scope.</span></li>
-        <li><strong>Test</strong><span>Navigate the localized build, trigger gameplay states, compare source and target, and test narrow UI layouts.</span></li>
-        <li><strong>Classify</strong><span>Assign category, severity, location, reproduction steps, expected result, and actual result.</span></li>
-        <li><strong>Correct</strong><span>Provide a concise suggested localization that preserves function, terminology, and interface constraints.</span></li>
-        <li><strong>Retest</strong><span>Verify the fix in the next build and check related strings for regression or inconsistency.</span></li>
-      </ol>
-    </section>
-
-    <section class="case-section">
-      <div class="case-section-heading">
-        <p class="eyebrow">QA checklist</p>
-        <div>
-          <h2>Linguistic and functional validation.</h2>
-        </div>
-      </div>
-
-      <div class="qa-grid">
-        <article class="qa-card">
-          <h3>Completed checks</h3>
-          <ul class="check-list">
-            <li>Meaning and context reviewed</li>
-            <li>Grammar and punctuation checked</li>
-            <li>Terminology compared with glossary</li>
-            <li>Variables and tags preserved</li>
-            <li>Numbers and mechanics validated</li>
-            <li>UI overflow tested at two resolutions</li>
-            <li>Expected and actual results separated</li>
-            <li>Suggested corrections supplied</li>
-          </ul>
-        </article>
-        <article class="qa-card">
-          <h3>Next validation pass</h3>
-          <ul class="check-list risk-list">
-            <li>Retest all Critical fixes</li>
-            <li>Run regression review on related strings</li>
-            <li>Test controller-specific prompts</li>
-            <li>Verify pluralisation with dynamic values</li>
-            <li>Test accessibility text scaling</li>
-            <li>Add neutral screenshots or mock-ups</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="case-section">
-      <div class="case-section-heading">
-        <p class="eyebrow">Outcome</p>
-        <div>
-          <h2>Actionable reports for a release-ready localization.</h2>
-        </div>
-      </div>
-
-      <article class="case-card">
-        <p>The final deliverables provide a traceable issue database, severity classification, reproduction steps, correction proposals, fix status, and evidence of in-context review.</p>
-        <p>The case study demonstrates that linguistic QA protects not only language quality, but also interface function, player decisions, and mechanical accuracy.</p>
-      </article>
-    </section>
-
-    <section class="case-cta">
-      <p class="eyebrow">Technical documentation</p>
-      <h2>Review the full QA report and issue log.</h2>
-      <p>The repository contains the Markdown report and a UTF-8 CSV with all 20 issues, including full reproduction steps, expected results, actual results, and suggested corrections.</p>
-      <div class="actions">
-        <a class="button primary" href="https://github.com/celsorcorreia/Game-Localization-Portfolio/tree/main/localization-samples/linguistic-qa" target="_blank" rel="noopener noreferrer">Open GitHub documentation</a>
-        <a class="button secondary" href="mailto:celsor.correia@gmail.com">Contact me</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© <span id="year"></span> Celso Ricardo Correia.</p>
-    <p>Original Linguistic QA sample for professional evaluation.</p>
-  </footer>
-
-  <script src="../assets/js/main.js"></script>
+<p><strong>Expected:</strong> The same approved term is used in both locations.</p>
+<p><strong>Actual:</strong> Two variants are displayed.</p>
+</article>
+</div>
+<div class="section-navigation"><a aria-label="Back to the top of this case study" class="section-link" href="#top">↑ Back to top</a></div></section>
+<section class="case-section" id="issue-log">
+<div class="case-section-heading">
+<p class="eyebrow">Complete issue log</p>
+<div>
+<h2>A traceable bug database.</h2>
+<p>The table below contains all 20 findings. The downloadable CSV in the repository includes full reproduction steps and expected-versus-actual fields.</p>
+</div>
+</div>
+<div class="table-wrap">
+<table class="case-table issue-table">
+<thead>
+<tr>
+<th>ID</th>
+<th>Category</th>
+<th>Severity</th>
+<th>Screen</th>
+<th>Issue</th>
+<th>Suggested correction</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LQA-001</td>
+<td>Terminology</td>
+<td><span class="severity-badge severity-major">Major</span></td>
+<td>Inventory</td>
+<td>The item name does not follow the approved glossary term used elsewhere in the build.</td>
+<td>Poção de Cura</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-002</td>
+<td>Terminology</td>
+<td><span class="severity-badge severity-major">Major</span></td>
+<td>World Map</td>
+<td>The string conflicts with the approved navigation term used in tutorials and map prompts.</td>
+<td>Viagem Rápida</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-003</td>
+<td>Grammar</td>
+<td><span class="severity-badge severity-minor">Minor</span></td>
+<td>Loot Notification</td>
+<td>The noun does not agree with the singular numeral.</td>
+<td>Você encontrou 1 moeda.</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-004</td>
+<td>Grammar</td>
+<td><span class="severity-badge severity-minor">Minor</span></td>
+<td>Equipment</td>
+<td>The adjective does not agree with the feminine noun espada.</td>
+<td>A espada lendária foi equipada.</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-005</td>
+<td>Context</td>
+<td><span class="severity-badge severity-major">Major</span></td>
+<td>Pause Menu</td>
+<td>The translation uses the noun meaning professional résumé instead of the gameplay action.</td>
+<td>Continuar</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-006</td>
+<td>Context</td>
+<td><span class="severity-badge severity-major">Major</span></td>
+<td>Social Menu</td>
+<td>The string refers to the player's adventuring group, not a celebration.</td>
+<td>Grupo</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-007</td>
+<td>UI overflow</td>
+<td><span class="severity-badge severity-major">Major</span></td>
+<td>Settings</td>
+<td>The localized label exceeds the fixed-width tab and overlaps the adjacent icon.</td>
+<td>Acessibilidade</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-008</td>
+<td>UI overflow</td>
+<td><span class="severity-badge severity-major">Major</span></td>
+<td>Inventory Toast</td>
+<td>The toast exceeds two lines and is truncated before the final word.</td>
+<td>Inventário cheio.</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-009</td>
+<td>Variables</td>
+<td><span class="severity-badge severity-critical">Critical</span></td>
+<td>Quest Reward</td>
+<td>The protected variable name was translated, so the runtime value is not injected.</td>
+<td>Você recebeu {amount} moedas.</td>
+<td><span class="status-badge status-retest">Retest</span></td>
+</tr>
+<tr>
+<td>LQA-010</td>
+<td>Variables</td>
+<td><span class="severity-badge severity-critical">Critical</span></td>
+<td>Combat Objective</td>
+<td>The quantity variable was removed, preventing the objective from displaying the required target.</td>
+<td>Derrote {count} inimigos.</td>
+<td><span class="status-badge status-retest">Retest</span></td>
+</tr>
+<tr>
+<td>LQA-011</td>
+<td>Tags</td>
+<td><span class="severity-badge severity-critical">Critical</span></td>
+<td>Tutorial</td>
+<td>The markup tags were translated and are no longer recognised by the UI parser.</td>
+<td>&lt;color=#FFCC00&gt;Segure [E]&lt;/color&gt; para interagir.</td>
+<td><span class="status-badge status-retest">Retest</span></td>
+</tr>
+<tr>
+<td>LQA-012</td>
+<td>Tags</td>
+<td><span class="severity-badge severity-major">Major</span></td>
+<td>Codex</td>
+<td>The closing bold tag is missing, causing the remaining article to stay bold.</td>
+<td>&lt;b&gt;Fraqueza:&lt;/b&gt; Gelo</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-013</td>
+<td>Capitalization</td>
+<td><span class="severity-badge severity-minor">Minor</span></td>
+<td>Quest Notification</td>
+<td>The notification heading does not follow the approved sentence-case pattern.</td>
+<td>Nova missão</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-014</td>
+<td>Capitalization</td>
+<td><span class="severity-badge severity-minor">Minor</span></td>
+<td>Character Sheet</td>
+<td>The label uses all caps while the interface style guide requires sentence case.</td>
+<td>Pontos de vida</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-015</td>
+<td>Mechanics</td>
+<td><span class="severity-badge severity-critical">Critical</span></td>
+<td>Skill Description</td>
+<td>The localization changes a +25% damage bonus into dealing only 25% of normal damage.</td>
+<td>Cause 25% a mais de dano enquanto estiver com menos de 30% dos Pontos de Vida.</td>
+<td><span class="status-badge status-retest">Retest</span></td>
+</tr>
+<tr>
+<td>LQA-016</td>
+<td>Mechanics</td>
+<td><span class="severity-badge severity-critical">Critical</span></td>
+<td>Item Tooltip</td>
+<td>The translation changes a two-second reduction into setting every cooldown to two seconds.</td>
+<td>Reduz em 2 segundos o tempo de recarga das habilidades.</td>
+<td><span class="status-badge status-retest">Retest</span></td>
+</tr>
+<tr>
+<td>LQA-017</td>
+<td>Punctuation</td>
+<td><span class="severity-badge severity-minor">Minor</span></td>
+<td>Quest Summary</td>
+<td>The colon separating the label and value is missing.</td>
+<td>Recompensa: 500 XP</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-018</td>
+<td>Punctuation</td>
+<td><span class="severity-badge severity-minor">Minor</span></td>
+<td>Confirmation Dialog</td>
+<td>An incorrect space appears before the question mark.</td>
+<td>Tem certeza?</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-019</td>
+<td>Consistency</td>
+<td><span class="severity-badge severity-major">Major</span></td>
+<td>World / Tutorial</td>
+<td>Two different translations are used for the same gameplay object.</td>
+<td>Ponto de Salvamento</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+<tr>
+<td>LQA-020</td>
+<td>Consistency</td>
+<td><span class="severity-badge severity-major">Major</span></td>
+<td>Class Selection / Codex</td>
+<td>The class name changes between character creation and codex entries.</td>
+<td>Patrulheiro</td>
+<td><span class="status-badge status-fixed">Fixed</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section-navigation"><a aria-label="Back to the top of this case study" class="section-link" href="#top">↑ Back to top</a></div></section>
+<section class="case-section">
+<div class="case-section-heading">
+<p class="eyebrow">Workflow</p>
+<div>
+<h2>From preparation to retest.</h2>
+</div>
+</div>
+<ol class="process">
+<li><strong>Prepare</strong><span>Review terminology, style rules, protected variables, markup, platform, build, and test scope.</span></li>
+<li><strong>Test</strong><span>Navigate the localized build, trigger gameplay states, compare source and target, and test narrow UI layouts.</span></li>
+<li><strong>Classify</strong><span>Assign category, severity, location, reproduction steps, expected result, and actual result.</span></li>
+<li><strong>Correct</strong><span>Provide a concise suggested localization that preserves function, terminology, and interface constraints.</span></li>
+<li><strong>Retest</strong><span>Verify the fix in the next build and check related strings for regression or inconsistency.</span></li>
+</ol>
+</section>
+<section class="case-section" id="quality-assurance">
+<div class="case-section-heading">
+<p class="eyebrow">QA checklist</p>
+<div>
+<h2>Linguistic and functional validation.</h2>
+</div>
+</div>
+<div class="qa-grid">
+<article class="qa-card">
+<h3>Completed checks</h3>
+<ul class="check-list">
+<li>Meaning and context reviewed</li>
+<li>Grammar and punctuation checked</li>
+<li>Terminology compared with glossary</li>
+<li>Variables and tags preserved</li>
+<li>Numbers and mechanics validated</li>
+<li>UI overflow tested at two resolutions</li>
+<li>Expected and actual results separated</li>
+<li>Suggested corrections supplied</li>
+</ul>
+</article>
+<article class="qa-card">
+<h3>Next validation pass</h3>
+<ul class="check-list risk-list">
+<li>Retest all Critical fixes</li>
+<li>Run regression review on related strings</li>
+<li>Test controller-specific prompts</li>
+<li>Verify pluralisation with dynamic values</li>
+<li>Test accessibility text scaling</li>
+<li>Add neutral screenshots or mock-ups</li>
+</ul>
+</article>
+</div>
+<div class="section-navigation"><a aria-label="Back to the top of this case study" class="section-link" href="#top">↑ Back to top</a></div></section>
+<section class="case-section" id="outcome">
+<div class="case-section-heading">
+<p class="eyebrow">Outcome</p>
+<div>
+<h2>Actionable reports for a release-ready localization.</h2>
+</div>
+</div>
+<article class="case-card">
+<p>The final deliverables provide a traceable issue database, severity classification, reproduction steps, correction proposals, fix status, and evidence of in-context review.</p>
+<p>The case study demonstrates that linguistic QA protects not only language quality, but also interface function, player decisions, and mechanical accuracy.</p>
+</article>
+</section>
+<section class="case-cta">
+<p class="eyebrow">Technical documentation</p>
+<h2>Review the full QA report and issue log.</h2>
+<p>The repository contains the Markdown report and a UTF-8 CSV with all 20 issues, including full reproduction steps, expected results, actual results, and suggested corrections.</p>
+<div class="actions">
+<a class="button primary" href="https://github.com/celsorcorreia/Game-Localization-Portfolio/tree/main/localization-samples/linguistic-qa" rel="noopener noreferrer" target="_blank">Open GitHub documentation</a>
+<a class="button secondary" href="mailto:celsor.correia@gmail.com">Contact me</a>
+<a class="button secondary" href="../index.html#projects">Return to selected work</a></div>
+</section>
+</main>
+<footer>
+<p>© <span id="year"></span> Celso Ricardo Correia.</p>
+<p>Original Linguistic QA sample for professional evaluation.</p>
+</footer>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>

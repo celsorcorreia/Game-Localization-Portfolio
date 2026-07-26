@@ -892,3 +892,196 @@ footer {
     display: flex;
   }
 }
+
+
+/* ==========================================================
+   Sticky header, internal case index, and Back to top
+   ========================================================== */
+
+/*
+ * Sticky header.
+ * The solid background is the fallback for browsers without blur support.
+ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+  max-width: none;
+  margin: 0;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: max(1rem, calc((100vw - var(--max)) / 2 + 2rem));
+  padding-right: max(1rem, calc((100vw - var(--max)) / 2 + 2rem));
+
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+/*
+ * Blur enhancement.
+ * Browsers that support backdrop-filter receive the translucent version.
+ * Browsers that do not support it keep the solid background above.
+ */
+@supports (
+  (backdrop-filter: blur(14px)) or
+  (-webkit-backdrop-filter: blur(14px))
+) {
+  .site-header {
+    background: rgba(13, 11, 20, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+}
+
+/*
+ * Prevent an anchored section title from being hidden
+ * behind the sticky header.
+ */
+#top,
+.section[id],
+.case-section[id],
+.contact[id] {
+  scroll-margin-top: 7rem;
+}
+
+/* Internal case-study index */
+
+.case-index {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem;
+
+  margin: 0 0 4rem;
+  padding: 1rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.case-index-label {
+  margin-right: .35rem;
+  color: var(--text);
+  font-size: .78rem;
+  font-weight: 850;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.case-index a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  padding: .48rem .72rem;
+
+  color: var(--muted);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+
+  font-size: .8rem;
+  font-weight: 750;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.case-index a:hover,
+.case-index a:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Back-to-top link after long sections */
+
+.section-navigation {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 2rem;
+  padding-top: 1rem;
+
+  border-top: 1px solid var(--border);
+}
+
+.section-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+
+  min-height: 2.4rem;
+  padding: .45rem .7rem;
+
+  color: var(--muted);
+  border: 1px solid transparent;
+
+  font-size: .82rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.section-link:hover,
+.section-link:focus-visible {
+  color: var(--accent);
+  background: var(--surface);
+  border-color: var(--accent);
+}
+
+/*
+ * Keep the sticky header and expanded mobile navigation usable
+ * on small screens.
+ */
+@media (max-width: 720px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    padding: .85rem 1rem;
+  }
+
+  #primary-navigation {
+    width: 100%;
+    max-height: calc(100vh - 5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .case-index {
+    margin-bottom: 2.5rem;
+    padding: .8rem;
+  }
+
+  .case-index-label {
+    width: 100%;
+    margin: 0 0 .2rem;
+  }
+
+  .case-index a {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .section-navigation {
+    justify-content: stretch;
+  }
+
+  .section-link {
+    width: 100%;
+    justify-content: center;
+    border-color: var(--border);
+    background: var(--surface);
+  }
+}
+
+/*
+ * Respect reduced-motion preferences.
+ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
