@@ -765,3 +765,46 @@ footer {
 .string-table code {
   white-space: nowrap;
 }
+
+
+/* Case study visual evidence */
+
+.visual-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.visual-card {
+  margin: 0;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.visual-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--bg);
+}
+
+.visual-card figcaption {
+  padding: 1rem 1.2rem 1.2rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  font-size: .9rem;
+}
+
+.visual-card:focus-within,
+.visual-card:hover {
+  border-color: var(--accent);
+}
+
+@media (max-width: 760px) {
+  .visual-grid {
+    grid-template-columns: 1fr;
+  }
+}
