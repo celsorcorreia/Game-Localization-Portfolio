@@ -1,12 +1,19 @@
 # Celso Ricardo Correia
 
-**Localização de Jogos | EN ↔ PT-BR | Terminologia e Documentação de Worldbuilding**
+**Localização de Jogos | Inglês → Português | Terminologia e Documentação de Worldbuilding**
 
-> Adicione aqui e-mail profissional, LinkedIn, localização e disponibilidade.
+**Email:** celsor.correia@gmail.com  
+**LinkedIn:** https://www.linkedin.com/in/celso-ricardo-correia/  
+**GitHub:** https://github.com/celsorcorreia  
+**Portfolio:** https://celsorcorreia.github.io/Game-Localization-Portfolio/  
+**Localização:** Dublin, Ireland  
+**Disponibilidade:** Freelance, contrato, e oportunidades em período integral
 
 ## Resumo profissional
 
-Profissional de localização de jogos com foco em inglês e português brasileiro, experiência na organização de terminologia, adaptação de conteúdo voltado ao jogador, documentação de sistemas criativos e manutenção de consistência entre regras, interface, narrativa e materiais de worldbuilding.
+Especialista em localização de jogos do inglês para o português brasileiro, com foco em textos para jogadores, gestão de terminologia, regras de RPG de mesa, consistência narrativa, documentação de construção de mundo e garantia de qualidade linguística.
+
+Experiência no desenvolvimento de glossários bilíngues, guias de estilo, estudos de caso de localização, terminologia de regras, documentação baseada no GitHub e fluxos de trabalho de tradução de textos longos.
 
 ## Competências principais
 
@@ -19,19 +26,27 @@ Profissional de localização de jogos com foco em inglês e português brasilei
 - Fluxos com GitHub e Markdown
 - QA linguístico e contextual
 
-## Projetos de portfólio
+## Projetos selecionados do portfólio
 
-### Iconia: Bichos e Feitiços
+### Iconia: Critters & Spells
 
-Projeto autoral de card game usado para demonstrar localização de palavras-chave, nomenclatura, acessibilidade, redação concisa de regras e governança terminológica.
+Localização de palavras-chave, terminologia de jogos de cartas, clareza das regras, acessibilidade e consistência da linguagem dos ícones.
 
-### Khaoz Age
+### Khaoz Age RPG
 
-Cenário autoral de RPG usado para demonstrar localização narrativa, consistência de lore, sistemas de nomes, glossários e voz mítica.
+Localização da narrativa, terminologia de construção de mundo, títulos divinos, voz mítica e documentação de um vasto universo de fantasia.
 
-## Experiência
+### Localização das regras do RPG de mesa da Quinta Edição
 
-Adicione experiências relevantes, responsabilidades, datas, ferramentas e resultados mensuráveis.
+Localização das regras do inglês para o português brasileiro com base no SRD 5.1, incluindo combate, conjuração de magias, condições, conversão métrica e controle de qualidade linguística.
+
+## Prática de tradução de RPG de mesa de formato longo
+
+Traduzi de forma independente mais de 600 páginas de material de RPG de mesa do inglês para o português brasileiro para estudo privado e não comercial.
+
+O trabalho incluiu prosa narrativa, instruções de encontros, textos em destaque, regras, fichas de estatísticas, magias, itens, diálogos de NPCs, gerenciamento de terminologia, referências cruzadas e consistência do documento.
+
+As traduções permanecem privadas e inéditas. Este trabalho não foi encomendado, endossado ou publicado pelo detentor dos direitos autorais originais.
 
 ## Formação e certificações
 
