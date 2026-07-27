@@ -57,8 +57,6 @@ Unless a file states otherwise, written content, fictional settings, terminology
 
 # Game-Localization-Portfolio
 
-## Featured case studies
-
 ### Iconia: Critters & Spells
 
 Card game keyword localization, concise rules, accessibility, and terminology management.
