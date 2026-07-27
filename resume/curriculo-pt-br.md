@@ -1,13 +1,13 @@
 # Celso Ricardo Correia
 
-**Localização de Jogos | Inglês → Português | Terminologia e Documentação de Worldbuilding**
+**Localização de Jogos | Inglês → Português Brasileiro | Terminologia e Documentação de Worldbuilding**
 
 **Email:** celsor.correia@gmail.com  
 **LinkedIn:** https://www.linkedin.com/in/celso-ricardo-correia/  
 **GitHub:** https://github.com/celsorcorreia  
-**Portfolio:** https://celsorcorreia.github.io/Game-Localization-Portfolio/  
-**Localização:** Dublin, Ireland  
-**Disponibilidade:** Freelance, contrato, e oportunidades em período integral
+**Portfólio:** https://celsorcorreia.github.io/Game-Localization-Portfolio/  
+**Localização:** Dublin, Irlanda  
+**Disponibilidade:** Freelance, contrato e oportunidades em período integral
 
 ## Resumo profissional
 
@@ -17,14 +17,24 @@ Experiência no desenvolvimento de glossários bilíngues, guias de estilo, estu
 
 ## Competências principais
 
-- Localização inglês ↔ português brasileiro
+- Localização do inglês para o português brasileiro
 - Tradução, edição e revisão
 - Gestão de terminologia e glossários
 - Consistência narrativa e de worldbuilding
-- Clareza de regras e textos de cartas
+- Clareza de regras de RPG de mesa e textos de cartas
+- Localização de interface e tutoriais
+- QA linguístico e relatórios estruturados de bugs
 - Documentação de localização
-- Fluxos com GitHub e Markdown
-- QA linguístico e contextual
+- Fluxos de trabalho com GitHub e Markdown
+
+## Ferramentas
+
+- MateCAT
+- Git e GitHub
+- Visual Studio Code
+- Markdown
+- Notion
+- Microsoft Office
 
 ## Projetos selecionados do portfólio
 
@@ -34,20 +44,41 @@ Localização de palavras-chave, terminologia de jogos de cartas, clareza das re
 
 ### Khaoz Age RPG
 
-Localização da narrativa, terminologia de construção de mundo, títulos divinos, voz mítica e documentação de um vasto universo de fantasia.
+Localização narrativa, terminologia de construção de mundo, títulos divinos, voz mítica e documentação de um vasto universo de fantasia.
 
-### Localização das regras do RPG de mesa da Quinta Edição
+### Localização das Regras de RPG de Mesa da Quinta Edição
 
-Localização das regras do inglês para o português brasileiro com base no SRD 5.1, incluindo combate, conjuração de magias, condições, conversão métrica e controle de qualidade linguística.
+Localização de regras do inglês para o português brasileiro com base no SRD 5.1, incluindo combate, conjuração de magias, condições, conversão métrica e QA linguístico.
+
+### QA Linguístico
+
+Amostra fictícia original de QA em contexto, cobrindo terminologia, gramática, contexto, estouro de interface, variáveis, tags, mecânicas, classificação de severidade e relatórios estruturados de bugs.
+
+### Localização de Interface e Tutoriais
+
+Amostra fictícia original de localização, cobrindo menus, botões, tutoriais, mensagens de sistema, objetivos de missão, variáveis protegidas e limites de caracteres.
 
 ## Prática de tradução de RPG de mesa de formato longo
 
 Traduzi de forma independente mais de 600 páginas de material de RPG de mesa do inglês para o português brasileiro para estudo privado e não comercial.
 
-O trabalho incluiu prosa narrativa, instruções de encontros, textos em destaque, regras, fichas de estatísticas, magias, itens, diálogos de NPCs, gerenciamento de terminologia, referências cruzadas e consistência do documento.
+O trabalho incluiu prosa narrativa, instruções de encontros, textos em destaque, regras, blocos de estatísticas, magias, itens, diálogos de NPCs, gestão de terminologia, referências cruzadas e consistência em documentos longos.
 
-As traduções permanecem privadas e inéditas. Este trabalho não foi encomendado, endossado ou publicado pelo detentor dos direitos autorais originais.
+As traduções permanecem privadas e inéditas. Este trabalho não foi encomendado, endossado ou publicado pelo detentor original dos direitos autorais.
 
-## Formação e certificações
+## Formação
 
-Adicione formação, qualificações linguísticas, cursos de localização e certificações relevantes.
+- Curso Técnico em Logística — 2015–2016
+- Curso Técnico em Serviços Jurídicos — 2014–2015
+- Estudos Técnicos em Informática — 2008–2009
+- Ensino Médio — 2006
+
+## Idiomas
+
+- Português brasileiro — Nativo
+- Inglês — Proficiente
+- Espanhol — Iniciante
+
+## Desenvolvimento profissional
+
+Estudo independente contínuo em localização de jogos, localização de regras de RPG de mesa, gestão de terminologia, QA linguístico, acessibilidade, documentação baseada no GitHub e fluxos de trabalho de tradução de textos longos.

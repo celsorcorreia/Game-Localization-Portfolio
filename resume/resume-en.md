@@ -17,16 +17,26 @@ Experienced in developing bilingual glossaries, style guides, localization case 
 
 ## Core skills
 
-- English ↔ Brazilian Portuguese localization
+- English → Brazilian Portuguese localization
 - Translation, editing, and proofreading
 - Terminology and glossary management
 - Narrative and worldbuilding consistency
-- Rules and card-text clarity
+- TTRPG rules and card-text clarity
+- UI and tutorial localization
+- Linguistic QA and structured bug reporting
 - Localization documentation
 - GitHub and Markdown workflows
-- Contextual and linguistic QA
 
-## Portfolio projects
+## Tools
+
+- MateCAT
+- Git and GitHub
+- Visual Studio Code
+- Markdown
+- Notion
+- Microsoft Office
+
+## Selected portfolio projects
 
 ### Iconia: Critters & Spells
 
@@ -40,6 +50,14 @@ Narrative localization, worldbuilding terminology, divine titles, mythic voice, 
 
 English-to-Brazilian Portuguese rules localization based on the SRD 5.1, including combat, spellcasting, conditions, metric conversion, and linguistic QA.
 
+### Linguistic QA
+
+An original fictional in-context QA sample covering terminology, grammar, context, UI overflow, variables, tags, mechanics, severity classification, and structured bug reporting.
+
+### UI & Tutorial Localization
+
+An original fictional localization sample covering menus, buttons, tutorials, system messages, quest objectives, protected variables, and character limits.
+
 ## Long-form TTRPG translation practice
 
 Independently translated more than 600 pages of tabletop RPG material from English into Brazilian Portuguese for private, non-commercial study.
@@ -48,6 +66,19 @@ The work included narrative prose, encounter instructions, boxed text, rules, st
 
 The translations remain private and unpublished. This work was not commissioned, endorsed, or published by the original rights holder.
 
-## Education and certifications
+## Education
 
-Add education, language qualifications, localization training, and relevant certifications.
+- Technical Degree in Logistics — 2015–2016
+- Technical Degree in Legal Services — 2014–2015
+- Technical Studies in Computer Science — 2008–2009
+- High School Diploma — 2006
+
+## Languages
+
+- Brazilian Portuguese — Native
+- English — Proficient
+- Spanish — Beginner
+
+## Professional development
+
+Ongoing independent study in game localization, TTRPG rules localization, terminology management, linguistic QA, accessibility, GitHub-based documentation, and long-form translation workflows.
