@@ -54,7 +54,7 @@ This repository is a living portfolio. Samples and glossary entries should ident
 ## Copyright
 
 Unless a file states otherwise, written content, fictional settings, terminology, and localization samples remain the intellectual property of their respective authors and rights holders. Public visibility is for portfolio evaluation and does not grant permission for commercial reuse.
-=======
+
 # Game-Localization-Portfolio
 
 ## Featured case studies
